@@ -1,0 +1,766 @@
+[
+  {
+    "co2e": 679,
+    "action": "main",
+    "category": "food",
+    "option": "Poisson",
+    "country": "FR",
+    "active": false
+  },
+  {
+    "category": "energy",
+    "country": "FR",
+    "action": "electricity",
+    "option": "Bioéthanol",
+    "co2e": 144,
+    "active": true
+  },
+  {
+    "co2e": 7.48,
+    "action": "train",
+    "category": "transport",
+    "option": "Eurostar",
+    "country": "FR",
+    "active": true
+  },
+  {
+    "co2e": 512,
+    "action": "drinks",
+    "category": "food",
+    "option": "Alcool",
+    "country": "FR"
+  },
+  {
+    "co2e": 151,
+    "action": "desert",
+    "category": "food",
+    "option": "Crême dessert",
+    "country": "FR"
+  },
+  {
+    "co2e": 7.04,
+    "action": "train",
+    "category": "transport",
+    "country": "FR",
+    "default": false,
+    "option": "Transilien",
+    "active": true
+  },
+  {
+    "co2e": 100,
+    "action": "coffee",
+    "category": "food",
+    "option": "Expresso",
+    "country": "FR",
+    "active": false
+  },
+  {
+    "country": "FR",
+    "category": "energy",
+    "option": "Mix Français",
+    "comments": "Mix énergétique Français",
+    "action": "electricity",
+    "co2e": 17,
+    "default": true,
+    "active": true
+  },
+  {
+    "co2e": 100,
+    "action": "car",
+    "category": "transport",
+    "option": "GPL",
+    "country": "FR",
+    "active": false
+  },
+  {
+    "action": "train",
+    "category": "transport",
+    "option": "THALYS",
+    "country": "FR",
+    "active": true,
+    "co2e": 7
+  },
+  {
+    "co2e": 730,
+    "category": "energy",
+    "option": "Centrale fioul",
+    "action": "electricity",
+    "active": true,
+    "country": "FR"
+  },
+  {
+    "co2e": 75,
+    "action": "starter",
+    "category": "food",
+    "option": "Végétarienne",
+    "country": "FR",
+    "active": false
+  },
+  {
+    "action": "train",
+    "category": "transport",
+    "country": "FR",
+    "option": "Tramway",
+    "active": true,
+    "co2e": 3.4
+  },
+  {
+    "co2e": 300,
+    "action": "starter",
+    "category": "food",
+    "option": "Viande",
+    "country": "FR",
+    "active": false
+  },
+  {
+    "category": "transport",
+    "country": "FR",
+    "action": "metro",
+    "option": "Paris",
+    "default": true,
+    "comments": "Distance is not KM but number of stations // ~0.57 Km between 2 stations (Paris) // 2.5 gCo2e / km (Paris)",
+    "co2e": 2.166,
+    "active": true
+  },
+  {
+    "co2e": 115,
+    "action": "desert",
+    "category": "food",
+    "option": "Pâtisserie",
+    "country": "FR"
+  },
+  {
+    "co2e": 418,
+    "category": "energy",
+    "option": "Centrale gaz",
+    "action": "electricity",
+    "active": true,
+    "country": "FR"
+  },
+  {
+    "co2e": 100,
+    "action": "drinks",
+    "category": "food",
+    "option": "Eau en bouteille",
+    "country": "FR"
+  },
+  {
+    "co2e": 2395,
+    "action": "main",
+    "category": "food",
+    "option": "Viande rouge",
+    "country": "FR",
+    "active": false
+  },
+  {
+    "co2e": 2.99,
+    "action": "train",
+    "category": "transport",
+    "option": "TGV INOUI",
+    "country": "FR",
+    "active": true
+  },
+  {
+    "co2e": 16.8,
+    "action": "cheese",
+    "category": "food",
+    "option": "Emmental",
+    "country": "FR"
+  },
+  {
+    "co2e": 120,
+    "action": "side",
+    "category": "food",
+    "option": "Blé",
+    "country": "FR",
+    "active": false
+  },
+  {
+    "category": "transport",
+    "country": "FR",
+    "action": "coach",
+    "option": "Agglomération",
+    "co2e": 146,
+    "active": true
+  },
+  {
+    "co2e": 1.15,
+    "action": "train",
+    "category": "transport",
+    "option": "OUIGO",
+    "country": "FR",
+    "active": true
+  },
+  {
+    "co2e": 22.8,
+    "action": "cheese",
+    "category": "food",
+    "option": "Cheddar",
+    "country": "FR"
+  },
+  {
+    "co2e": 18,
+    "action": "cheese",
+    "category": "food",
+    "option": "Gorgonzola",
+    "country": "FR"
+  },
+  {
+    "co2e": 130,
+    "action": "main",
+    "category": "food",
+    "option": "Oeuf",
+    "country": "FR",
+    "active": false
+  },
+  {
+    "co2e": 16,
+    "action": "electricity",
+    "category": "energy",
+    "option": "Biométhane ",
+    "country": "FR",
+    "active": true
+  },
+  {
+    "category": "transport",
+    "country": "FR",
+    "action": "coach",
+    "option": "Autoroute",
+    "co2e": 29.5,
+    "default": true,
+    "active": true
+  },
+  {
+    "co2e": 950,
+    "action": "main",
+    "category": "food",
+    "option": "Pizza",
+    "country": "FR",
+    "active": false
+  },
+  {
+    "co2e": 120,
+    "action": "side",
+    "category": "food",
+    "option": "Pâtes",
+    "country": "FR",
+    "active": false
+  },
+  {
+    "co2e": 6.73,
+    "action": "train",
+    "category": "transport",
+    "country": "FR",
+    "option": "Intercités",
+    "active": true
+  },
+  {
+    "co2e": 30.9,
+    "action": "cheese",
+    "category": "food",
+    "option": "Grana padano",
+    "country": "FR"
+  },
+  {
+    "action": "bus",
+    "category": "transport",
+    "country": "FR",
+    "option": "Hors RATP",
+    "co2e": 110,
+    "active": true
+  },
+  {
+    "category": "transport",
+    "country": "FR",
+    "action": "moto",
+    "default": true,
+    "option": "< 250 cm3",
+    "co2e": 61,
+    "active": true
+  },
+  {
+    "co2e": 335,
+    "action": "drinks",
+    "category": "food",
+    "option": "Boisson chaude",
+    "country": "FR"
+  },
+  {
+    "co2e": 650,
+    "action": "main",
+    "category": "food",
+    "option": "Viande blanche",
+    "country": "FR",
+    "active": false
+  },
+  {
+    "co2e": 50,
+    "action": "car",
+    "category": "transport",
+    "option": "Hybride",
+    "country": "FR",
+    "active": false
+  },
+  {
+    "co2e": 55,
+    "action": "main",
+    "category": "food",
+    "option": "Végétarien",
+    "country": "FR",
+    "active": false
+  },
+  {
+    "co2e": 6.2,
+    "action": "train",
+    "category": "transport",
+    "option": "RER",
+    "country": "FR",
+    "active": true
+  },
+  {
+    "country": "FR",
+    "category": "transport",
+    "action": "flight",
+    "option": "Court courrier",
+    "active": true,
+    "co2e": 141
+  },
+  {
+    "category": "transport",
+    "country": "FR",
+    "action": "scooter",
+    "option": "Électrique",
+    "co2e": 4.1,
+    "active": false
+  },
+  {
+    "category": "food",
+    "option": "Pain aux céréales, graines",
+    "action": "bread",
+    "active": true,
+    "hint": "Une portion de pain de 50g, correspondant à un petit pain que l'on trouve dans les cafétérias.",
+    "co2PerGrammes": 1.04,
+    "grammesPerPortion": 50,
+    "source": "https://agribalyse.ademe.fr/app/aliments/7255#Pain,_baguette_ou_boule,_aux_c%C3%A9r%C3%A9ales_et_graines,_artisanal",
+    "co2e": 52,
+    "country": "FR"
+  },
+  {
+    "co2e": 288,
+    "action": "desert",
+    "category": "food",
+    "option": "Yaourt",
+    "country": "FR"
+  },
+  {
+    "co2e": 45.62,
+    "action": "cheese",
+    "category": "food",
+    "option": "Mozzarella",
+    "country": "FR"
+  },
+  {
+    "co2e": 13.41,
+    "action": "cheese",
+    "category": "food",
+    "option": "Cream cheese allégé",
+    "country": "FR"
+  },
+  {
+    "co2e": 2,
+    "action": "bike",
+    "category": "transport",
+    "option": "Électrique",
+    "country": "FR",
+    "active": false
+  },
+  {
+    "co2e": 100,
+    "action": "coffee",
+    "category": "food",
+    "option": "Capsule",
+    "country": "FR",
+    "default": false
+  },
+  {
+    "category": "transport",
+    "country": "FR",
+    "action": "scooter",
+    "option": "Thermique",
+    "co2e": 61.6,
+    "default": true,
+    "active": false
+  },
+  {
+    "co2e": 23,
+    "action": "desert",
+    "category": "food",
+    "option": "Fruits",
+    "country": "FR"
+  },
+  {
+    "category": "food",
+    "action": "bread",
+    "source": "https://agribalyse.ademe.fr/app/aliments/7200#Pain_de_mie,_courant",
+    "option": "Pain de mie",
+    "co2PerGrammes": 1.76,
+    "grammesPerPortion": 50,
+    "hint": "Une portion de pain de 50g, correspondant à un petit pain que l'on trouve dans les cafétérias.",
+    "active": true,
+    "co2e": 88,
+    "country": "FR"
+  },
+  {
+    "co2e": 3.23,
+    "action": "train",
+    "category": "transport",
+    "option": "LYRIA",
+    "country": "FR",
+    "active": true
+  },
+  {
+    "co2e": 0,
+    "action": "drinks",
+    "category": "food",
+    "option": "Eau du robinet",
+    "country": "FR"
+  },
+  {
+    "co2e": 270,
+    "category": "energy",
+    "option": "Propane",
+    "action": "electricity",
+    "active": true,
+    "country": "FR"
+  },
+  {
+    "co2e": 26.75,
+    "action": "cheese",
+    "category": "food",
+    "option": "Camembert",
+    "country": "FR"
+  },
+  {
+    "country": "FR",
+    "category": "food",
+    "action": "bread",
+    "co2PerGrammes": 0.69,
+    "hint": "Une portion de pain de 50g, correspondant à un petit pain que l'on trouve dans les cafétérias.",
+    "grammesPerPortion": 50,
+    "co2e": 34.5,
+    "active": true,
+    "option": "Pain de campagne",
+    "source": "https://agribalyse.ademe.fr/app/aliments/7261#Pain_de_campagne_maison_(avec_farine_pour_machine_%C3%A0_pain)"
+  },
+  {
+    "co2e": 170,
+    "action": "drinks",
+    "category": "food",
+    "option": "Soda",
+    "country": "FR",
+    "active": false
+  },
+  {
+    "co2e": 58,
+    "action": "desert",
+    "category": "food",
+    "option": "Fruits transformés",
+    "country": "FR"
+  },
+  {
+    "co2e": 273,
+    "category": "energy",
+    "option": "Butane",
+    "action": "electricity",
+    "active": true,
+    "country": "FR"
+  },
+  {
+    "category": "transport",
+    "country": "FR",
+    "action": "flight",
+    "option": "Grandes lignes",
+    "co2e": 82.8,
+    "default": true,
+    "active": false
+  },
+  {
+    "co2e": 26.93,
+    "action": "train",
+    "category": "transport",
+    "option": "TER",
+    "country": "FR",
+    "default": true,
+    "active": true
+  },
+  {
+    "co2e": 193,
+    "action": "car",
+    "category": "transport",
+    "option": "Thermique",
+    "country": "FR",
+    "default": true,
+    "active": false
+  },
+  {
+    "co2e": 150,
+    "action": "starter",
+    "category": "food",
+    "option": "Mixte",
+    "country": "FR",
+    "active": false
+  },
+  {
+    "co2e": 25.41,
+    "action": "cheese",
+    "category": "food",
+    "option": "Gouda",
+    "country": "FR"
+  },
+  {
+    "co2e": 51,
+    "action": "cheese",
+    "category": "food",
+    "option": "Pecorino",
+    "country": "FR"
+  },
+  {
+    "co2e": 237,
+    "action": "drinks",
+    "category": "food",
+    "option": "Soupe",
+    "country": "FR",
+    "active": false
+  },
+  {
+    "co2e": 102,
+    "action": "side",
+    "category": "food",
+    "option": "Pommes de terre",
+    "country": "FR",
+    "active": false
+  },
+  {
+    "category": "transport",
+    "country": "FR",
+    "action": "bike",
+    "option": "Classique",
+    "co2e": 1,
+    "default": true,
+    "active": false
+  },
+  {
+    "co2e": 120,
+    "action": "side",
+    "category": "food",
+    "option": "Riz",
+    "country": "FR",
+    "active": false
+  },
+  {
+    "country": "FR",
+    "category": "energy",
+    "action": "electricity",
+    "option": "Bois granulé",
+    "co2e": 27,
+    "active": true
+  },
+  {
+    "co2e": 55,
+    "action": "side",
+    "category": "food",
+    "option": "Légumes",
+    "country": "FR",
+    "active": false
+  },
+  {
+    "co2e": 10.2,
+    "action": "cheese",
+    "category": "food",
+    "option": "Cottage cheese",
+    "country": "FR"
+  },
+  {
+    "country": "FR",
+    "category": "energy",
+    "option": "Bois bûches",
+    "co2e": 32,
+    "action": "electricity",
+    "active": true
+  },
+  {
+    "co2e": 140,
+    "action": "desert",
+    "category": "food",
+    "option": "Glace",
+    "country": "FR"
+  },
+  {
+    "co2e": 19.8,
+    "action": "car",
+    "category": "transport",
+    "option": "Électrique",
+    "country": "FR",
+    "active": false
+  },
+  {
+    "co2e": 20.76,
+    "action": "cheese",
+    "category": "food",
+    "option": "Cream cheese",
+    "country": "FR"
+  },
+  {
+    "country": "FR",
+    "category": "energy",
+    "option": "Photovoltaïque ",
+    "co2e": 44,
+    "action": "electricity",
+    "active": true
+  },
+  {
+    "co2e": 475,
+    "action": "drinks",
+    "category": "food",
+    "option": "Jus de fruit",
+    "country": "FR",
+    "active": false
+  },
+  {
+    "co2e": 9.72,
+    "action": "cheese",
+    "category": "food",
+    "option": "Fromage frais",
+    "country": "FR"
+  },
+  {
+    "action": "bus",
+    "category": "transport",
+    "country": "FR",
+    "option": "RATP",
+    "co2e": 98,
+    "active": true,
+    "default": true
+  },
+  {
+    "category": "transport",
+    "country": "FR",
+    "action": "moto",
+    "option": "> 250 cm3",
+    "co2e": 167,
+    "default": true,
+    "active": true
+  },
+  {
+    "action": "electricity",
+    "category": "energy",
+    "option": "Éolienne (terre)",
+    "country": "FR",
+    "co2e": 14,
+    "active": true
+  },
+  {
+    "action": "electricity",
+    "category": "energy",
+    "option": "Éolienne (mer)",
+    "country": "FR",
+    "co2e": 15,
+    "active": true
+  },
+  {
+    "co2e": 968,
+    "action": "gas",
+    "category": "energy",
+    "option": "Gaz de haut fourneau",
+    "country": "FR",
+    "active": false
+  },
+  {
+    "action": "gas",
+    "category": "energy",
+    "option": "Gaz naturel",
+    "country": "FR",
+    "co2e": 239,
+    "default": true,
+    "active": false
+  },
+  {
+    "co2e": 171,
+    "action": "gas",
+    "category": "energy",
+    "option": "Gaz de cokerie",
+    "country": "FR",
+    "active": false
+  },
+  {
+    "co2e": 6,
+    "action": "electricity",
+    "category": "energy",
+    "option": "Nucléaire",
+    "country": "FR",
+    "default": false,
+    "active": true
+  },
+  {
+    "action": "electricity",
+    "category": "energy",
+    "option": "Hydroélectrique",
+    "country": "FR",
+    "co2e": 6,
+    "active": true
+  },
+  {
+    "category": "energy",
+    "country": "FR",
+    "action": "electricity",
+    "option": "Centrale charbon",
+    "co2e": 1060,
+    "active": true
+  },
+  {
+    "country": "FR",
+    "active": true,
+    "co2e": 34.5,
+    "grammesPerPortion": 50,
+    "hint": "Une portion de pain de 50g, correspondant à un petit pain que l'on trouve dans les cafétérias.",
+    "action": "bread",
+    "category": "food",
+    "co2PerGrammes": 0.69,
+    "source": "https://agribalyse.ademe.fr/app/aliments/7261#Pain_de_campagne_maison_(avec_farine_pour_machine_%C3%A0_pain)",
+    "option": "Pain de campagne"
+  },
+  {
+    "country": "FR",
+    "category": "energy",
+    "action": "water",
+    "default": true,
+    "co2e": 132,
+    "option": "Production d’eau potable en France",
+    "active": true
+  },
+  {
+    "country": "FR",
+    "category": "energy",
+    "action": "electricity",
+    "option": "Géothermique",
+    "default": false,
+    "co2e": 45,
+    "active": true
+  },
+  {
+    "category": "transport",
+    "country": "FR",
+    "option": "Eurostar",
+    "action": "train",
+    "co2e": 7.48,
+    "active": true
+  },
+  {
+    "country": "FR",
+    "category": "food",
+    "option": "Café filtre",
+    "co2e": 120,
+    "action": "coffee",
+    "active": false
+  }
+]
