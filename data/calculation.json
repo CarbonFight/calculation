@@ -1,5 +1,15 @@
 [
   {
+    "country": "FR",
+    "category": "transport",
+    "co2e": 24.9,
+    "default": true,
+    "active": true,
+    "option": "Électrique",
+    "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees",
+    "action": "kick scooter"
+  },
+  {
     "co2e": 679,
     "action": "main",
     "category": "food",
@@ -21,7 +31,8 @@
     "category": "transport",
     "option": "Eurostar",
     "country": "FR",
-    "active": true
+    "active": true,
+    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf"
   },
   {
     "co2e": 512,
@@ -29,6 +40,53 @@
     "category": "food",
     "option": "Alcool",
     "country": "FR"
+  },
+  {
+    "country": "FR",
+    "category": "clothes",
+    "option": "Veste imperméable ",
+    "action": "Manteau",
+    "co2e": 41000,
+    "active": true,
+    "default": true,
+    "source": "https://impactco2.fr/habillement/vesteimpermeable"
+  },
+  {
+    "country": "FR",
+    "category": "clothes",
+    "action": "Manteau",
+    "option": "Manteau d'hiver",
+    "co2e": 99000,
+    "active": true,
+    "source": "https://impactco2.fr/habillement/manteau"
+  },
+  {
+    "country": "FR",
+    "category": "clothes",
+    "action": "Pull",
+    "option": "Sweat en coton",
+    "co2e": 31000,
+    "active": true,
+    "source": "https://impactco2.fr/habillement"
+  },
+  {
+    "country": "FR",
+    "category": "transport",
+    "action": "boat",
+    "co2e": 35.9,
+    "comments": "Bateau automoteur/400 à 649 TPL, ADEME",
+    "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees",
+    "option": "Péniche",
+    "active": true
+  },
+  {
+    "country": "FR",
+    "category": "clothes",
+    "action": "Pull",
+    "co2e": 28000,
+    "active": true,
+    "source": "https://impactco2.fr/habillement",
+    "option": "Acrylique "
   },
   {
     "co2e": 151,
@@ -44,6 +102,17 @@
     "country": "FR",
     "default": false,
     "option": "Transilien",
+    "active": true,
+    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf"
+  },
+  {
+    "country": "FR",
+    "category": "transport",
+    "action": "boat",
+    "option": "Jet skis",
+    "co2e": 63.8,
+    "comments": "gCO2e par heure",
+    "source": "https://skeptics.stackexchange.com/questions/23050/do-jet-skis-produce-in-an-hour-equivalent-pollution-to-100-000km-of-a-new-small",
     "active": true
   },
   {
@@ -62,15 +131,27 @@
     "action": "electricity",
     "co2e": 17,
     "default": true,
+    "active": true,
+    "source": "https://www.rte-france.com/eco2mix/les-emissions-de-co2-par-kwh-produit-en-france"
+  },
+  {
+    "action": "car",
+    "category": "transport",
+    "country": "FR",
+    "option": "Hybride",
+    "co2e": 61.9,
+    "comments": "Voiture particulière/Coeur de gamme - Véhicule compact/Hybride, full, Prius",
+    "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees",
     "active": true
   },
   {
-    "co2e": 100,
-    "action": "car",
-    "category": "transport",
-    "option": "GPL",
     "country": "FR",
-    "active": false
+    "category": "transport",
+    "action": "boat",
+    "option": "Voilier à moteur",
+    "co2e": 9430,
+    "comments": "g co2e / heure d'utilisation",
+    "active": true
   },
   {
     "action": "train",
@@ -78,7 +159,27 @@
     "option": "THALYS",
     "country": "FR",
     "active": true,
-    "co2e": 7
+    "co2e": 7,
+    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf"
+  },
+  {
+    "country": "FR",
+    "category": "clothes",
+    "action": "Chemise",
+    "co2e": 13000,
+    "source": "https://impactco2.fr/habillement",
+    "active": true,
+    "default": true,
+    "option": "Coton"
+  },
+  {
+    "country": "FR",
+    "category": "clothes",
+    "action": "Chaussure",
+    "option": "Cuir",
+    "co2e": 13000,
+    "source": "https://impactco2.fr/habillement/chaussuresencuir",
+    "active": true
   },
   {
     "co2e": 730,
@@ -86,7 +187,8 @@
     "option": "Centrale fioul",
     "action": "electricity",
     "active": true,
-    "country": "FR"
+    "country": "FR",
+    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie"
   },
   {
     "co2e": 75,
@@ -97,12 +199,22 @@
     "active": false
   },
   {
+    "country": "FR",
+    "category": "clothes",
+    "option": "T-shirt en coton",
+    "action": "T-shirt",
+    "co2e": 6000,
+    "active": true,
+    "default": true
+  },
+  {
     "action": "train",
     "category": "transport",
     "country": "FR",
     "option": "Tramway",
     "active": true,
-    "co2e": 3.4
+    "co2e": 3.4,
+    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf"
   },
   {
     "co2e": 300,
@@ -135,7 +247,8 @@
     "option": "Centrale gaz",
     "action": "electricity",
     "active": true,
-    "country": "FR"
+    "country": "FR",
+    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie"
   },
   {
     "co2e": 100,
@@ -158,7 +271,8 @@
     "category": "transport",
     "option": "TGV INOUI",
     "country": "FR",
-    "active": true
+    "active": true,
+    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf"
   },
   {
     "co2e": 16.8,
@@ -181,7 +295,8 @@
     "action": "coach",
     "option": "Agglomération",
     "co2e": 146,
-    "active": true
+    "active": true,
+    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf"
   },
   {
     "co2e": 1.15,
@@ -189,7 +304,8 @@
     "category": "transport",
     "option": "OUIGO",
     "country": "FR",
-    "active": true
+    "active": true,
+    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf"
   },
   {
     "co2e": 22.8,
@@ -197,6 +313,16 @@
     "category": "food",
     "option": "Cheddar",
     "country": "FR"
+  },
+  {
+    "country": "FR",
+    "category": "transport",
+    "action": "boat",
+    "comments": "Transport maritime par ferry (dont flotte, utilisation et infrastructure) [tkm], GLO, ADEME",
+    "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees",
+    "co2e": 195,
+    "option": "Ferry",
+    "active": true
   },
   {
     "co2e": 18,
@@ -219,7 +345,8 @@
     "category": "energy",
     "option": "Biométhane ",
     "country": "FR",
-    "active": true
+    "active": true,
+    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie"
   },
   {
     "category": "transport",
@@ -228,7 +355,17 @@
     "option": "Autoroute",
     "co2e": 29.5,
     "default": true,
-    "active": true
+    "active": true,
+    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf"
+  },
+  {
+    "country": "FR",
+    "category": "energy",
+    "action": "electricity",
+    "option": "Fioul domestique",
+    "co2e": 314,
+    "active": true,
+    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie"
   },
   {
     "co2e": 950,
@@ -247,12 +384,23 @@
     "active": false
   },
   {
+    "category": "clothes",
+    "country": "FR",
+    "action": "Robe",
+    "co2e": 55000,
+    "active": true,
+    "default": true,
+    "source": "https://impactco2.fr/habillement/robeencoton",
+    "option": "Coton"
+  },
+  {
     "co2e": 6.73,
     "action": "train",
     "category": "transport",
     "country": "FR",
     "option": "Intercités",
-    "active": true
+    "active": true,
+    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf"
   },
   {
     "co2e": 30.9,
@@ -267,7 +415,18 @@
     "country": "FR",
     "option": "Hors RATP",
     "co2e": 110,
-    "active": true
+    "active": true,
+    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf"
+  },
+  {
+    "country": "FR",
+    "category": "transport",
+    "action": "flight",
+    "option": "Court courrier",
+    "co2e": 141,
+    "comments": "Avion passagers/Court courrier, 2018/SANS trainées, ADEME",
+    "active": true,
+    "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
     "category": "transport",
@@ -276,7 +435,8 @@
     "default": true,
     "option": "< 250 cm3",
     "co2e": 61,
-    "active": true
+    "active": true,
+    "source": "https://base-empreinte.ademe.fr/documentation/base-carbone?docLink=Routier2"
   },
   {
     "co2e": 335,
@@ -284,6 +444,33 @@
     "category": "food",
     "option": "Boisson chaude",
     "country": "FR"
+  },
+  {
+    "country": "FR",
+    "category": "clothes",
+    "action": "Pull",
+    "co2e": 56000,
+    "active": true,
+    "source": "https://impactco2.fr/habillement",
+    "option": "Laine"
+  },
+  {
+    "country": "FR",
+    "category": "clothes",
+    "action": "Chemise",
+    "co2e": 12000,
+    "source": "https://impactco2.fr/habillement",
+    "active": true,
+    "option": "Viscose"
+  },
+  {
+    "category": "clothes",
+    "country": "FR",
+    "action": "Robe",
+    "co2e": 50000,
+    "active": true,
+    "source": "https://impactco2.fr/habillement/robeenviscose",
+    "option": "Viscose"
   },
   {
     "co2e": 650,
@@ -294,12 +481,14 @@
     "active": false
   },
   {
-    "co2e": 50,
     "action": "car",
     "category": "transport",
-    "option": "Hybride",
     "country": "FR",
-    "active": false
+    "option": "Hydrogène",
+    "co2e": 19.4,
+    "comments": "Voiture particulière/Berline/Hydrogène électrolyse mix France décentralisée",
+    "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees",
+    "active": true
   },
   {
     "co2e": 55,
@@ -310,28 +499,51 @@
     "active": false
   },
   {
+    "country": "FR",
+    "category": "clothes",
+    "action": "Pull",
+    "co2e": 12000,
+    "default": true,
+    "active": true,
+    "source": "https://impactco2.fr/habillement",
+    "option": "Coton recyclé "
+  },
+  {
     "co2e": 6.2,
     "action": "train",
     "category": "transport",
     "option": "RER",
     "country": "FR",
-    "active": true
+    "active": true,
+    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf"
   },
   {
     "country": "FR",
     "category": "transport",
     "action": "flight",
-    "option": "Court courrier",
     "active": true,
-    "co2e": 141
+    "source": "https://www.sciencesetavenir.fr/nature-environnement/climat/l-impact-ecologique-demesure-des-jets-prives_164673",
+    "comments": "jet privé Bernard Arnault",
+    "co2e": 4600,
+    "option": "Jet privé"
   },
   {
     "category": "transport",
     "country": "FR",
     "action": "scooter",
     "option": "Électrique",
-    "co2e": 4.1,
-    "active": false
+    "co2e": 20,
+    "active": true,
+    "source": "https://youmatter.world/fr/moto-scooter-impact-ecologique/"
+  },
+  {
+    "category": "clothes",
+    "country": "FR",
+    "action": "Robe",
+    "co2e": 56000,
+    "active": true,
+    "source": "https://impactco2.fr/habillement/robeenpolyester",
+    "option": "Polyester"
   },
   {
     "category": "food",
@@ -353,6 +565,26 @@
     "country": "FR"
   },
   {
+    "country": "FR",
+    "category": "transport",
+    "action": "flight",
+    "comments": "Avion passagers/Moyen courrier, 2018/SANS trainées, ADEME",
+    "option": "Moyen courrier",
+    "co2e": 103,
+    "active": true,
+    "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "country": "FR",
+    "category": "clothes",
+    "action": "Chaussure",
+    "option": "Tissu",
+    "co2e": 17000,
+    "source": "https://impactco2.fr/habillement/chaussuresentissu",
+    "active": true,
+    "default": true
+  },
+  {
     "co2e": 45.62,
     "action": "cheese",
     "category": "food",
@@ -367,12 +599,31 @@
     "country": "FR"
   },
   {
-    "co2e": 2,
+    "country": "FR",
+    "category": "clothes",
+    "action": "Chemise",
+    "option": "Polo",
+    "co2e": 10000,
+    "source": "https://impactco2.fr/habillement",
+    "active": true
+  },
+  {
     "action": "bike",
     "category": "transport",
     "option": "Électrique",
     "country": "FR",
-    "active": false
+    "active": false,
+    "co2e": 22,
+    "source": "European Cyclists’ Federation (ECF), “Quantifying CO2 savings of Cycling.” 2011."
+  },
+  {
+    "country": "FR",
+    "category": "transport",
+    "action": "boat",
+    "option": "Yachts ",
+    "co2e": 242000,
+    "comments": "g co2e / heure d'utilisation",
+    "active": true
   },
   {
     "co2e": 100,
@@ -383,13 +634,23 @@
     "default": false
   },
   {
+    "country": "FR",
+    "category": "clothes",
+    "option": "Veste simili-cuir",
+    "action": "Manteau",
+    "co2e": 26000,
+    "active": true,
+    "source": "https://impactco2.fr/habillement/vestesimilicuir"
+  },
+  {
     "category": "transport",
     "country": "FR",
     "action": "scooter",
     "option": "Thermique",
-    "co2e": 61.6,
     "default": true,
-    "active": false
+    "co2e": 80,
+    "active": true,
+    "source": "https://youmatter.world/fr/moto-scooter-impact-ecologique/"
   },
   {
     "co2e": 23,
@@ -416,6 +677,15 @@
     "category": "transport",
     "option": "LYRIA",
     "country": "FR",
+    "active": true,
+    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf"
+  },
+  {
+    "country": "FR",
+    "option": "T-shirt en polyester",
+    "co2e": 6000,
+    "category": "clothes",
+    "action": "T-shirt",
     "active": true
   },
   {
@@ -431,7 +701,8 @@
     "option": "Propane",
     "action": "electricity",
     "active": true,
-    "country": "FR"
+    "country": "FR",
+    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie"
   },
   {
     "co2e": 26.75,
@@ -451,6 +722,17 @@
     "active": true,
     "option": "Pain de campagne",
     "source": "https://agribalyse.ademe.fr/app/aliments/7261#Pain_de_campagne_maison_(avec_farine_pour_machine_%C3%A0_pain)"
+  },
+  {
+    "country": "FR",
+    "category": "transport",
+    "action": "boat",
+    "option": "Navette fluviale",
+    "co2e": 64.3,
+    "comments": "Navette fluviale/Donnée 2009, ADEME",
+    "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees",
+    "active": true,
+    "default": true
   },
   {
     "co2e": 170,
@@ -473,16 +755,19 @@
     "option": "Butane",
     "action": "electricity",
     "active": true,
-    "country": "FR"
+    "country": "FR",
+    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie"
   },
   {
     "category": "transport",
     "country": "FR",
     "action": "flight",
-    "option": "Grandes lignes",
-    "co2e": 82.8,
     "default": true,
-    "active": false
+    "option": "Long courrier",
+    "co2e": 83.2,
+    "active": true,
+    "comments": "Avion passagers/Long courrier, 2018/SANS trainées, ADEME",
+    "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
     "co2e": 26.93,
@@ -491,16 +776,19 @@
     "option": "TER",
     "country": "FR",
     "default": true,
-    "active": true
+    "active": true,
+    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf"
   },
   {
-    "co2e": 193,
     "action": "car",
     "category": "transport",
     "option": "Thermique",
     "country": "FR",
     "default": true,
-    "active": false
+    "co2e": 119,
+    "comments": "Voiture moyenne/Mixte/2018",
+    "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees",
+    "active": true
   },
   {
     "co2e": 150,
@@ -545,9 +833,10 @@
     "country": "FR",
     "action": "bike",
     "option": "Classique",
-    "co2e": 1,
     "default": true,
-    "active": false
+    "active": false,
+    "co2e": 21,
+    "source": "European Cyclists’ Federation (ECF), “Quantifying CO2 savings of Cycling.” 2011."
   },
   {
     "co2e": 120,
@@ -556,14 +845,6 @@
     "option": "Riz",
     "country": "FR",
     "active": false
-  },
-  {
-    "country": "FR",
-    "category": "energy",
-    "action": "electricity",
-    "option": "Bois granulé",
-    "co2e": 27,
-    "active": true
   },
   {
     "co2e": 55,
@@ -581,12 +862,14 @@
     "country": "FR"
   },
   {
+    "category": "clothes",
     "country": "FR",
-    "category": "energy",
-    "option": "Bois bûches",
-    "co2e": 32,
-    "action": "electricity",
-    "active": true
+    "action": "Pantalon",
+    "option": "Jean",
+    "co2e": 24000,
+    "default": true,
+    "active": true,
+    "source": "https://impactco2.fr/habillement/jeans"
   },
   {
     "co2e": 140,
@@ -596,12 +879,14 @@
     "country": "FR"
   },
   {
-    "co2e": 19.8,
     "action": "car",
     "category": "transport",
     "option": "Électrique",
     "country": "FR",
-    "active": false
+    "co2e": 12.4,
+    "comments": "Voiture particulière/Coeur de gamme - Véhicule compact/Electrique",
+    "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees",
+    "active": true
   },
   {
     "co2e": 20.76,
@@ -612,11 +897,21 @@
   },
   {
     "country": "FR",
+    "category": "transport",
+    "action": "boat",
+    "option": "Hors-bord",
+    "co2e": 40000,
+    "comments": "gco2e / heure d'utilisation",
+    "active": true
+  },
+  {
+    "country": "FR",
     "category": "energy",
     "option": "Photovoltaïque ",
     "co2e": 44,
     "action": "electricity",
-    "active": true
+    "active": true,
+    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie"
   },
   {
     "co2e": 475,
@@ -625,6 +920,15 @@
     "option": "Jus de fruit",
     "country": "FR",
     "active": false
+  },
+  {
+    "country": "FR",
+    "category": "clothes",
+    "action": "Chaussure",
+    "option": "Sport",
+    "co2e": 19000,
+    "source": "https://impactco2.fr/habillement/chaussuresdesport",
+    "active": true
   },
   {
     "co2e": 9.72,
@@ -640,7 +944,8 @@
     "option": "RATP",
     "co2e": 98,
     "active": true,
-    "default": true
+    "default": true,
+    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf"
   },
   {
     "category": "transport",
@@ -649,7 +954,8 @@
     "option": "> 250 cm3",
     "co2e": 167,
     "default": true,
-    "active": true
+    "active": true,
+    "source": "https://base-empreinte.ademe.fr/documentation/base-carbone?docLink=Routier2"
   },
   {
     "action": "electricity",
@@ -657,7 +963,8 @@
     "option": "Éolienne (terre)",
     "country": "FR",
     "co2e": 14,
-    "active": true
+    "active": true,
+    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie"
   },
   {
     "action": "electricity",
@@ -665,7 +972,8 @@
     "option": "Éolienne (mer)",
     "country": "FR",
     "co2e": 15,
-    "active": true
+    "active": true,
+    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie"
   },
   {
     "co2e": 968,
@@ -699,7 +1007,8 @@
     "option": "Nucléaire",
     "country": "FR",
     "default": false,
-    "active": true
+    "active": true,
+    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie"
   },
   {
     "action": "electricity",
@@ -707,7 +1016,8 @@
     "option": "Hydroélectrique",
     "country": "FR",
     "co2e": 6,
-    "active": true
+    "active": true,
+    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie"
   },
   {
     "category": "energy",
@@ -715,7 +1025,8 @@
     "action": "electricity",
     "option": "Centrale charbon",
     "co2e": 1060,
-    "active": true
+    "active": true,
+    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie"
   },
   {
     "country": "FR",
@@ -745,7 +1056,8 @@
     "option": "Géothermique",
     "default": false,
     "co2e": 45,
-    "active": true
+    "active": true,
+    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie"
   },
   {
     "category": "transport",
@@ -753,7 +1065,8 @@
     "option": "Eurostar",
     "action": "train",
     "co2e": 7.48,
-    "active": true
+    "active": true,
+    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf"
   },
   {
     "country": "FR",
