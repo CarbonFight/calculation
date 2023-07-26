@@ -8,7 +8,7 @@ router.get('/', async (req, res) => {
         const categories = await getAllCategory();
         res.json(categories);
       } catch (error) {
-        errorGestion(error);
+        errorGestion(error, res);
       }
 });
 

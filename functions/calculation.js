@@ -1,6 +1,6 @@
 const getData = require('../utils/dataAcces');
 
-async function calculation(category, action, option, count) {
+async function calculation(category, action, option, count, side) {
     try {
       
       const jsonData = await getData();

@@ -1,23 +1,49 @@
 const express = require('express');
 const router = express.Router();
 const calculation = require('../functions/calculation');
+const calculationFood = require('../functions/calculationFood');
 const errorGestion = require('../utils/errorGestion');
 
 router.get('/', async (req, res) => {
   
-    const { category, action, option, count } = req.query;
+    const { category, action, option, count , side} = req.query;
 
+    if (category === "food") {
+      if (action === "main") {
+        if (!category || !action || !option || !count || !side) {
+          return res.status(400).json({ 
+            message: !category ? 'category is missing.' :
+                     !action ? 'action is missing.' : 
+                     !option ? 'option is missing.' : 
+                     !count ? 'count is missing.' : 
+                     'side is missing.'
+          });
+        }
+      } else {
+        if (!category || !action || !option) {
+          return res.status(400).json({ 
+            message: !category ? 'category is missing.' :
+                     !action ? 'action is missing.' :
+                     'option required in food category.'
+          });
+        }
+      }
 
-    if (!category && !action) {
-      return res.status(400).json({ message: 'category and action are missing.' });
-    } else if (!category) {
-      return res.status(400).json({ message: 'category is missing.' });
-    } else if (!action) {
-      return res.status(400).json({ message: 'action is missing.' });
+    } else {
+      if (!category || !action) {
+        return res.status(400).json({ 
+          message: !category ? 'category is missing.' : 'action is missing.'
+        });
+      }
     }
   
     try {
-      const result = await calculation(category, action, option, count); 
+      let result;
+      if (category !== "food") {
+        result = await calculation(category, action, option, count, side); 
+      } else {
+        result = await calculationFood(category, action, option, count, side); 
+      }
   
       const response = {
           category: category,
@@ -29,11 +55,15 @@ router.get('/', async (req, res) => {
       if (count) {
           response.count = parseInt(count);
       }
+
+      if (category === "food" && action === "main" && side) {
+        response.side = JSON.parse(side);
+      }
   
       res.json(response);
   
     } catch (error) {
-      errorGestion(error);
+      errorGestion(error, res);
     }
 });
 

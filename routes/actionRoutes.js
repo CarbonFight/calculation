@@ -13,7 +13,7 @@ router.get('/', async (req, res) => {
         const actions = await getAllAction(category);
         res.json(actions);
       } catch (error) {
-        errorGestion(error);
+        errorGestion(error, res);
       }
 });
 
