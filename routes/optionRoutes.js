@@ -19,7 +19,7 @@ router.get('/', async (req, res) => {
         res.json(actions);
     
       } catch (error) {
-        errorGestion(error);
+        errorGestion(error, res);
       }
 });
 
