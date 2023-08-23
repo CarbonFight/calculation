@@ -11,6 +11,11 @@ const categoryRoutes = require('./routes/categoryRoutes');
 const actionRoutes = require('./routes/actionRoutes');
 const optionRoutes = require('./routes/optionRoutes');
 
+app.use((req, res, next) => {
+  res.set('Cache-Control', 'public, max-age=7200');
+  next();
+});
+
 
 app.use('/v1/calculations', calculationRoutes);
 app.use('/v1/categories', categoryRoutes);
