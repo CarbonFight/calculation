@@ -37,5 +37,5 @@ jobs:
     - name: Send Coverage to Codacy
       run: curl -Ls https://coverage.codacy.com/get.sh | bash -s report -l JavaScript -r ${{ github.workspace }}/coverage/lcov.info
       env:
-        CODACY_PROJECT_TOKEN: "ejvYxbImvNCNwr8fWhiB"
+        CODACY_API_TOKEN: "ejvYxbImvNCNwr8fWhiB"
       
