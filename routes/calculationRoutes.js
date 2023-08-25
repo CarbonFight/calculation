@@ -11,39 +11,43 @@ router.get('/', async (req, res) => {
     if (category === "food") {
       if (action === "main") {
         if (!category || !action || !option || !count || !side) {
-          let errorMessage;
-          if (!category) {
-            errorMessage = "category is missing.";
-          } else if (!action) {
-            errorMessage = "action is missing.";
-          } else if (!option) {
-            errorMessage = "option is missing.";
-          } else if (!count) {
-            errorMessage = "count is missing.";
-          } else {
-            errorMessage = "side is missing.";
-          }
-          return res.status(400).json({ message: errorMessage });         
+        let errorMessage;
+        if (!category) {
+          errorMessage = "category is missing.";
+        } else if (!action) {
+          errorMessage = "action is missing.";
+        } else if (!option) {
+          errorMessage = "option is missing.";
+        } else if (!count) {
+          errorMessage = "count is missing.";
+        } else {
+          errorMessage = "side is missing.";
+        }
+        return res.status(400).json({ message: errorMessage });         
         }
       } else {
         if (!category || !action || !option) {
-          let errorMessages;
-          if (!category) {
-            errorMessages = "category is missing.";
-          } else if (!action) {
-            errorMessages = "action is missing.";
-          } else if (category === "food" && !option) {
-            errorMessages = "option required in food category.";
-          }
-          return res.status(400).json({ message: errorMessages });
+        let errorMessages;
+        if (!category) {
+          errorMessages = "category is missing.";
+        } else if (!action) {
+          errorMessages = "action is missing.";
+        } else if (category === "food" && !option) {
+          errorMessages = "option required in food category.";
+        }
+        return res.status(400).json({ message: errorMessages });
         }
       }
 
     } else {
       if (!category || !action) {
-        return res.status(400).json({ 
-          message: !category ? "category is missing." : "action is missing."
-        });
+      let errorMessagess;
+      if (!category) {
+        errorMessagess = "category is missing.";
+      } else {
+        errorMessagess = "action is missing.";
+      }
+      return res.status(400).json({ message: errorMessagess });
       }
     }
   
@@ -63,7 +67,7 @@ router.get('/', async (req, res) => {
       };
   
       if (count) {
-          response.count = parseInt(count, 10);
+      response.count = parseInt(count, 10);
       }
 
       if (category === "food" && action === "main" && side) {
