@@ -33,7 +33,10 @@ jobs:
       with:
         name: coverage-report
         path: coverage/lcov-report
-        
+
+    - name: Debug Workspace Contents
+      run: ls -R ${{ github.workspace }}
+
     - name: Send Coverage to Codacy
       run: curl -Ls https://coverage.codacy.com/get.sh | bash -s report -l JavaScript -r ${{ github.workspace }}/coverage-report/lcov.info
       env:
