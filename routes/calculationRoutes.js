@@ -1,8 +1,8 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-const calculation = require('../functions/calculation');
-const calculationFood = require('../functions/calculationFood');
-const errorGestion = require('../utils/errorGestion');
+const calculation = require("../functions/calculation");
+const calculationFood = require("../functions/calculationFood");
+const errorGestion = require("../utils/errorGestion");
 
 router.get('/', async (req, res) => {
   
@@ -12,19 +12,19 @@ router.get('/', async (req, res) => {
       if (action === "main") {
         if (!category || !action || !option || !count || !side) {
           return res.status(400).json({ 
-            message: !category ? 'category is missing.' :
-                     !action ? 'action is missing.' : 
-                     !option ? 'option is missing.' : 
-                     !count ? 'count is missing.' : 
-                     'side is missing.'
+            message: !category ? "category is missing." :
+                     !action ? "action is missing." : 
+                     !option ? "option is missing." : 
+                     !count ? "count is missing." : 
+                     "side is missing."
           });
         }
       } else {
         if (!category || !action || !option) {
           return res.status(400).json({ 
-            message: !category ? 'category is missing.' :
-                     !action ? 'action is missing.' :
-                     'option required in food category.'
+            message: !category ? "category is missing." :
+                     !action ? "action is missing." :
+                     "option required in food category."
           });
         }
       }
@@ -32,7 +32,7 @@ router.get('/', async (req, res) => {
     } else {
       if (!category || !action) {
         return res.status(400).json({ 
-          message: !category ? 'category is missing.' : 'action is missing.'
+          message: !category ? "category is missing." : "action is missing."
         });
       }
     }
@@ -53,7 +53,7 @@ router.get('/', async (req, res) => {
       };
   
       if (count) {
-          response.count = parseInt(count);
+          response.count = parseInt(count, 10);
       }
 
       if (category === "food" && action === "main" && side) {

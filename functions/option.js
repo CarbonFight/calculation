@@ -1,10 +1,11 @@
-const getData = require('../utils/dataAcces');
+const getData = require("../utils/dataAcces");
 
 async function getAllOption(category, action) {
    const jsonData = await getData();
   
    const optionsSet = new Set(
-    jsonData.filter(item => item.category === category && item.action === action)
+    jsonData
+            .filter(item => item.category === category && item.action === action)
             .map(item => item.option));
 
    const options = Array.from(optionsSet);
