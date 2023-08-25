@@ -16,7 +16,7 @@ router.get('/', async (req, res) => {
                      !action ? "action is missing." : 
                      !option ? "option is missing." : 
                      !count ? "count is missing." : 
-                     "side is missing."
+                              "side is missing."
           });
         }
       } else {
@@ -24,7 +24,7 @@ router.get('/', async (req, res) => {
           return res.status(400).json({ 
             message: !category ? "category is missing." :
                      !action ? "action is missing." :
-                     "option required in food category."
+                               "option required in food category."
           });
         }
       }

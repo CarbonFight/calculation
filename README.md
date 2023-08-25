@@ -52,13 +52,12 @@ npm install jest supertest express
 
 ## How to run app (local)
 
-  * Uncomment code in index.js [**L24 to L28**]
+Uncomment code in index.js [**L24 to L28**]
 
-  * Run :
+Run :
 ```bash
 npm start
 ```
-
 
 Swagger : http://localhost:3000/api-docs/#/
 
@@ -73,8 +72,8 @@ npm test
 
 To update the data, follow these steps:
 
-1. Copy the [**serviceAccountKey.json**] file to the root of your project.
-2. Run the following command:
+Copy the serviceAccountKey.json file to the root of your project.
+Run the following command:
 
 ```bash
 npm run data

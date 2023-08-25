@@ -5,8 +5,8 @@ async function getAllOption(category, action) {
   
    const optionsSet = new Set(
     jsonData
-            .filter(item => item.category === category && item.action === action)
-            .map(item => item.option));
+            .filter((item) => item.category === category && item.action === action)
+            .map((item) => item.option));
 
    const options = Array.from(optionsSet);
 

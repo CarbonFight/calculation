@@ -1,4 +1,3 @@
-
 /**
  * Handle and format errors for sending as JSON responses.
  *
