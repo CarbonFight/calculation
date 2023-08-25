@@ -11,21 +11,31 @@ router.get('/', async (req, res) => {
     if (category === "food") {
       if (action === "main") {
         if (!category || !action || !option || !count || !side) {
-          return res.status(400).json({ 
-            message: !category ? "category is missing." :
-                     !action ? "action is missing." : 
-                     !option ? "option is missing." : 
-                     !count ? "count is missing." : 
-                              "side is missing."
-          });
+          let errorMessage;
+          if (!category) {
+            errorMessage = "category is missing.";
+          } else if (!action) {
+            errorMessage = "action is missing.";
+          } else if (!option) {
+            errorMessage = "option is missing.";
+          } else if (!count) {
+            errorMessage = "count is missing.";
+          } else {
+            errorMessage = "side is missing.";
+          }
+          return res.status(400).json({ message: errorMessage });         
         }
       } else {
         if (!category || !action || !option) {
-          return res.status(400).json({ 
-            message: !category ? "category is missing." :
-                     !action ? "action is missing." :
-                               "option required in food category."
-          });
+          let errorMessages;
+          if (!category) {
+            errorMessages = "category is missing.";
+          } else if (!action) {
+            errorMessages = "action is missing.";
+          } else if (category === "food" && !option) {
+            errorMessages = "option required in food category.";
+          }
+          return res.status(400).json({ message: errorMessages });
         }
       }
 

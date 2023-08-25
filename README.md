@@ -52,7 +52,7 @@ npm install jest supertest express
 
 ## How to run app (local)
 
-Uncomment code in index.js [**L24 to L28**]
+Uncomment code in index.js Line 24 to Line 28
 
 Run :
 ```bash
