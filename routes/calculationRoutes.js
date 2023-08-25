@@ -23,7 +23,7 @@ router.get('/', async (req, res) => {
         } else {
           errorMessage = "side is missing.";
         }
-        return res.status(400).json({ message: errorMessage });         
+      return res.status(400).json({ message: errorMessage });         
         }
       } else {
         if (!category || !action || !option) {
