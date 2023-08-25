@@ -35,10 +35,12 @@ jobs:
         path: coverage/lcov-report
 
     - name: Send Coverage to Codacy
-      run: curl -Ls https://coverage.codacy.com/get.sh | bash -s report -l JavaScript -r ${{ github.workspace }}/coverage/lcov.info
-      env:
-        CODACY_API_TOKEN: "ejvYxbImvNCNwr8fWhiB"
-        with:
-        args: "report -l JavaScript -r ${{ github.workspace }}/coverage/lcov.info --organization-provider gh --project calculation --token CarbonFight"
+      run: |
+        curl -Ls https://coverage.codacy.com/get.sh | \
+        CODACY_API_TOKEN="ejvYxbImvNCNwr8fWhiB" \
+        CODACY_ORGANIZATION_PROVIDER="gh" \
+        CODACY_PROJECT_NAME="calculation" \
+        CODACY_USERNAME="CarbonFight" \
+        bash -s report -l JavaScript -r ${{ github.workspace }}/coverage/lcov.info
       
       
