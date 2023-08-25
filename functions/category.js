@@ -1,8 +1,7 @@
-const getData = require('../utils/dataAcces');
+const getData = require("../utils/dataAcces");
 
 async function getAllCategory() {
    const jsonData = await getData();
-  
    const categoriesSet = new Set(jsonData.map(item => item.category));
    const categories = Array.from(categoriesSet);
 

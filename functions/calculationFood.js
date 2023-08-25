@@ -1,8 +1,17 @@
-const getData = require('../utils/dataAcces');
+const getData = require("../utils/dataAcces");
 
+/**
+ * Calculate the CO2e emissions for food items.
+ * @param {string} category - The category of the food.
+ * @param {string} action - The action related to the food.
+ * @param {string|null} option - The option for the food (can be null).
+ * @param {number} count - The count of food items.
+ * @param {string[]} side - An array of side options for the food.
+ * @returns {[number, string]} An array containing the calculated CO2e emissions and the default option.
+ * @throws {Error} If no calculation is found for the given category and action.
+ */
 async function calculationFood(category, action, option, count, side) {
     try {
-
       let co2eMainComponent = 0;
       let co2eSideComponent = 0;
       let defaultOption;

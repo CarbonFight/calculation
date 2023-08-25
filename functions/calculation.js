@@ -1,5 +1,16 @@
-const getData = require('../utils/dataAcces');
+const getData = require("../utils/dataAcces");
 
+/**
+ * Calculate CO2e emissions based on category, action, option, count, and side.
+ *
+ * @param {string} category - The category of the calculation.
+ * @param {string} action - The action related to the calculation.
+ * @param {string|null} option - The option for the calculation (can be null).
+ * @param {number} count - The count of the calculation.
+ * @param {string[]} side - An array of side options for the calculation.
+ * @returns {[number, string]} An array containing the calculated CO2e emissions and the default option.
+ * @throws {Error} If no calculation is found for the given parameters.
+ */
 async function calculation(category, action, option, count, side) {
     try {
       
@@ -13,7 +24,6 @@ async function calculation(category, action, option, count, side) {
         }
       });
   
-      
       let co2e = 0;
       let defaultOption = option;
 

@@ -1,3 +1,10 @@
+/**
+ * Handle and format errors for sending as JSON responses.
+ *
+ * @param {Error} error - The error object to handle.
+ * @param {object} res - The response object.
+ * @returns {object} The JSON response containing the error message.
+ */
 function errorGestion(error, res) {
     if (error.status === 400) {
         const errorMessage = error.message.replace(/"/g, '');

@@ -1,5 +1,7 @@
 # CarbonFight
 
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/48178d7adaa54b29950b701f33a0893a)](https://app.codacy.com/gh/CarbonFight/calculation/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+
 [CarbonFight](https://carbonfight.app) is an OpenSource project. 
 This repository contains backend serverless functions.
 
@@ -50,12 +52,12 @@ npm install jest supertest express
 
 ## How to run app (local)
 
-* Uncomment code in index.js [**L24 to L28**]
-* Run :
+Uncomment code in index.js Line 24 to Line 28
+
+Run :
 ```bash
 npm start
 ```
-
 
 Swagger : http://localhost:3000/api-docs/#/
 
@@ -68,8 +70,10 @@ npm test
 
 ## How to update data
 
-* Copy [**serviceAccountKey.json**] to root project and run :
+To update the data, follow these steps:
+
+Copy the serviceAccountKey.json file to the root of your project.
+Run the following command:
 
 ```bash
-npm run data 
-```
+npm run data
