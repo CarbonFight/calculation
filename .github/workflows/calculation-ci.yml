@@ -28,7 +28,14 @@ jobs:
     - name: Run Tests and Generate Coverage
       run: npm test -- --coverage
 
+    - name: Save Coverage Report as Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: coverage-report
+        path: coverage/lcov-report
+        
     - name: Send Coverage to Codacy
-      run: curl -Ls https://coverage.codacy.com/get.sh | bash -s report -l JavaScript -r coverage/lcov-report/lcov.info
+      run: curl -Ls https://coverage.codacy.com/get.sh | bash -s report -l JavaScript -r ${{ github.workspace }}/coverage-report/lcov.info
       env:
         CODACY_PROJECT_TOKEN: "ejvYxbImvNCNwr8fWhiB"
+      
