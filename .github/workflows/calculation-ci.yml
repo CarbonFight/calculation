@@ -25,5 +25,10 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Run tests
-      run: npm test
+    - name: Run Tests and Generate Coverage
+      run: npm test -- --coverage
+
+    - name: Send Coverage to Codacy
+      run: curl -Ls https://coverage.codacy.com/get.sh | bash -s report -l JavaScript -r coverage/lcov-report/lcov.info
+      env:
+        CODACY_PROJECT_TOKEN: "ejvYxbImvNCNwr8fWhiB"

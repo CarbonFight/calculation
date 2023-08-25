@@ -1,18 +1,24 @@
-const admin = require('firebase-admin');
-const path = require('path');
-const serviceAccount = require(path.resolve(__dirname, './serviceAccountKey.json'));
-const fs = require('fs');
+const admin = require("f0irebase-admin");
+const path = require("path");
+const serviceAccount = require(path.resolve(__dirname, "./serviceAccountKey.json"));
+const fs = require("fs");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: 'https://carbonfight-89af6.firebaseapp.com'
+  databaseURL: "https://carbonfight-89af6.firebaseapp.com"
 });
 
 const db = admin.firestore();
 
 
-const collectionNames = ['calculation'];
+const collectionNames = ["calculation"];
 
+/**
+ * Exports a collection's data to a JSON file.
+ *
+ * @param {string} collectionName - The name of the collection.
+ * @param {Array} data - The data to be exported.
+ */
 function exportCollectionToJSON(collectionName, data) {
   const jsonData = JSON.stringify(data, null, 2);
   const fileName = `data/${collectionName}.json`;
