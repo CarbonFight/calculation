@@ -1,6 +1,6 @@
 # CarbonFight
 
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/48178d7adaa54b29950b701f33a0893a)](https://app.codacy.com/gh/CarbonFight/calculation/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/48178d7adaa54b29950b701f33a0893a)](https://app.codacy.com/gh/CarbonFight/calculation/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade) [![Codacy Badge](https://app.codacy.com/project/badge/Coverage/48178d7adaa54b29950b701f33a0893a)](https://app.codacy.com/gh/CarbonFight/calculation/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_coverage)
 
 [CarbonFight](https://carbonfight.app) is an OpenSource project. 
 This repository contains backend serverless functions.
