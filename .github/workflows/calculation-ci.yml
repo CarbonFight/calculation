@@ -25,5 +25,22 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Run tests
-      run: npm test
+    - name: Run Tests and Generate Coverage
+      run: npm test -- --coverage
+
+    - name: Save Coverage Report as Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: coverage-report
+        path: coverage/lcov-report
+
+    - name: Send Coverage to Codacy
+      run: |
+        curl -Ls https://coverage.codacy.com/get.sh | \
+        CODACY_API_TOKEN="ejvYxbImvNCNwr8fWhiB" \
+        CODACY_ORGANIZATION_PROVIDER="gh" \
+        CODACY_PROJECT_NAME="calculation" \
+        CODACY_USERNAME="CarbonFight" \
+        bash -s report -l JavaScript -r ${{ github.workspace }}/coverage/lcov.info
+      
+      
