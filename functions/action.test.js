@@ -1,6 +1,6 @@
 const getAllAction = require("./action");
 
-jest.mock("../utils/dataAcces", () => {
+jest.mock("./utils/dataAcces", () => {
   return jest.fn(() => [
     {
       'category': "transport",

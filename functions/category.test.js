@@ -1,6 +1,6 @@
 const getAllCategory = require("./category");
 
-jest.mock('../utils/dataAcces', () => {
+jest.mock('./utils/dataAcces', () => {
   return jest.fn(() => [
     {
       'category': "transport",
