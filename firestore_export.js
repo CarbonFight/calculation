@@ -13,7 +13,7 @@ const collectionNames = ['calculation'];
 
 function exportCollectionToJSON(collectionName, data) {
   const jsonData = JSON.stringify(data, null, 2);
-  const fileName = `data/${collectionName}.json`;
+  const fileName = `functions/data/${collectionName}.json`;
   fs.writeFile(fileName, jsonData, (err) => {
     if (err) {
       console.error(`Erreur lors de l'écriture du fichier JSON ${fileName} :`, err);

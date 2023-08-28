@@ -1,6 +1,6 @@
 const calculation = require("./calculation");
 
-jest.mock('../utils/dataAcces', () => {
+jest.mock('./utils/dataAcces', () => {
   return jest.fn(() => [
     {
       'category': "energy",

@@ -1,6 +1,6 @@
 const getAllOption = require("./option");
 
-jest.mock('../utils/dataAcces', () => {
+jest.mock('./utils/dataAcces', () => {
   return jest.fn(() => [
     {
       'category': "transport",
