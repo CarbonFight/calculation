@@ -17,11 +17,11 @@ app.use((req, res, next) => {
 });
 
 
-app.use("/calculations", calculationRoutes);
-app.use("/categories", categoryRoutes);
-app.use("/actions", actionRoutes);
-app.use("/options", optionRoutes);
-app.use("/documentation", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+app.use("/v1/calculations", calculationRoutes);
+app.use("/v1/categories", categoryRoutes);
+app.use("/v1/actions", actionRoutes);
+app.use("/v1/options", optionRoutes);
+app.use("/v1/documentation", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 exports.v1 = functions.region('europe-west6').https.onRequest(app);
 

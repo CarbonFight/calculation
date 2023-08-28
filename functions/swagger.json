@@ -7,7 +7,7 @@
   },
   "servers": [
     {
-      "url": "https://europe-west6-calculationco2e.cloudfunctions.net/v1"
+      "url": "https://api.carbonfight.app/v1"
     }
   ],
   "tags": [

@@ -12,12 +12,23 @@
     }
   ],
   "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
     "rewrites": [
       {
-        "source": "/v1",
+        "source": "/v1/**",
         "function": "v1",
         "region": "europe-west6"
       }
-    ]
+    ],
+    "redirects": [ {
+      "source": "/",
+      "destination": "/v1/documentation",
+      "type": 301
+    } ]
   }
 }
