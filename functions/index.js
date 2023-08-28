@@ -23,7 +23,7 @@ app.use("/v1/actions", actionRoutes);
 app.use("/v1/options", optionRoutes);
 app.use("/v1/documentation", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
-exports.v1 = functions.region('europe-west6').https.onRequest(app);
+exports.v1 = functions.region('europe-west6').runWith({minInstances: 2,}).https.onRequest(app);
 
 /* Use this part of code when you want to run the API locally */
 /*const port = 3000;
