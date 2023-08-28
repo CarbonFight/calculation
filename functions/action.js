@@ -1,4 +1,4 @@
-const getData = require("../utils/dataAcces");
+const getData = require("./utils/dataAcces");
 
 async function getAllAction(category) {
    const jsonData = await getData();

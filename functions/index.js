@@ -2,7 +2,7 @@ const functions = require("firebase-functions");
 const express = require("express");
 const cors = require("cors");
 const swaggerUi = require("swagger-ui-express");
-const swaggerDocument = require("./swagger.json");
+const swaggerDocument = require("../swagger.json");
 const app = express();
 app.use(cors());
 
@@ -24,7 +24,7 @@ app.use("/v1/options", optionRoutes);
 
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
-exports.api = functions.https.onRequest(app);
+exports.v1 = functions.region('europe-west6').https.onRequest(app);
 
 /* Use this part of code when you want to run the API locally */
 /*const port = 3000;

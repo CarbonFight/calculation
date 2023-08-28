@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const getAllOption = require("../functions/option");
+const getAllOption = require("../option");
 const errorGestion = require("../utils/errorGestion");
 
 router.get('/', async (req, res) => {

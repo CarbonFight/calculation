@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
-const calculation = require("../functions/calculation");
-const calculationFood = require("../functions/calculationFood");
+const calculation = require("../calculation");
+const calculationFood = require("../calculationFood");
 const errorGestion = require("../utils/errorGestion");
 
 router.get('/', async (req, res) => {

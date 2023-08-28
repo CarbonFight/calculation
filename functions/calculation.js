@@ -1,4 +1,4 @@
-const getData = require("../utils/dataAcces");
+const getData = require("./utils/dataAcces");
 
 /**
  * Calculate CO2e emissions based on category, action, option, count, and side.

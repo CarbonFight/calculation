@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const getAllAction = require("../functions/action");
+const getAllAction = require("../action");
 const errorGestion = require("../utils/errorGestion");
 
 router.get("/", async (req, res) => {

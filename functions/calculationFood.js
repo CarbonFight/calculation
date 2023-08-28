@@ -1,4 +1,4 @@
-const getData = require("../utils/dataAcces");
+const getData = require("./utils/dataAcces");
 
 /**
  * Calculate the CO2e emissions for food items.

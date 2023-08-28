@@ -1,22 +1,23 @@
 {
-    "functions": [
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log"
+      ]
+    }
+  ],
+  "hosting": {
+    "rewrites": [
       {
-        "source": "functions",
-        "codebase": "default",
-        "ignore": [
-          "node_modules",
-          ".git",
-          "firebase-debug.log",
-          "firebase-debug.*.log"
-        ]
+        "source": "/v1",
+        "function": "v1",
+        "region": "europe-west6"
       }
-    ],
-    "hosting": {
-        "rewrites": [{
-          "source": "/api",
-          "function": "api",
-          "region": "us-central1"
-        }]
-      }
+    ]
   }
-  
+}
