@@ -22,14 +22,11 @@ jobs:
       with:
         node-version: '18'
 
-    - name: Navigate to the functions directory
-      run: cd functions
-
     - name: Install dependencies
-      run: npm install
+      run: npm install --prefix functions
 
     - name: Run Tests and Generate Coverage
-      run: npm test -- --coverage
+      run: npm test --prefix functions -- --coverage
 
     - name: Save Coverage Report as Artifact
       uses: actions/upload-artifact@v2
