@@ -26,10 +26,12 @@ async function calculation(category, action, option, count, side) {
   
       let co2e = 0;
       let defaultOption = option;
+      let hint;
 
       if (results.length > 0) {
         co2e = results[0].co2e;
         defaultOption = results[0].option;
+        hint = results[0].hint;
       } else {
         let errorMessage = `No calculation found for category: "${category}", action: "${action}"`;
         if (option) {
@@ -42,9 +44,9 @@ async function calculation(category, action, option, count, side) {
 
       if (count) {
         const result = count * co2e;
-        return [Math.round(result), defaultOption];
+        return [Math.round(result), defaultOption, hint];
       } else {
-        return [co2e, defaultOption];
+        return [co2e, defaultOption, hint];
       }
       
     } catch (error) {

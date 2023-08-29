@@ -64,6 +64,7 @@ router.get('/', async (req, res) => {
           action: action,
           option: result[1],
           co2e: result[0],
+          hint: result[2] || ""
       };
   
       if (count) {
@@ -74,7 +75,7 @@ router.get('/', async (req, res) => {
         response.side = JSON.parse(side);
       }
   
-      res.json(response);
+      res.send(response);
   
     } catch (error) {
       errorGestion(error, res);

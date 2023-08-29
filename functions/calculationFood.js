@@ -15,6 +15,7 @@ async function calculationFood(category, action, option, count, side) {
       let co2eMainComponent = 0;
       let co2eSideComponent = 0;
       let defaultOption;
+      let hint;
       
       const jsonData = await getData();
 
@@ -28,6 +29,7 @@ async function calculationFood(category, action, option, count, side) {
           });
           if (resultat.length > 0) {
             co2eMainComponent = resultat[0].co2e;
+            hint = resultat[0].hint;
           } else {
             co2eMainComponent = 0;
             throw new Error(`No calculation found for category: "${category}", action: "${action}"`);
@@ -49,7 +51,7 @@ async function calculationFood(category, action, option, count, side) {
       }
 
     const result = (co2eMainComponent + co2eSideComponent) * count;
-    return [Math.round(result), defaultOption];
+    return [Math.round(result), defaultOption, hint];
     
     } catch (error) {
       throw error; 
