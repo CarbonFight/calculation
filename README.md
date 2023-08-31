@@ -10,6 +10,7 @@ This repository contains backend serverless functions.
 
 # Links
 Swagger :  [API Swagger](https://api.carbonfight.app/v1/documentation/#/)
+
 Codacy : [Codacy](https://app.codacy.com/gh/CarbonFight/calculation/dashboard)
 
 ## Requirements
