@@ -36,6 +36,7 @@ firebase login
 Install project dependencies : 
 
 ```bash
+# Working directory
 cd functions
 ```
 
@@ -63,7 +64,24 @@ npm install jest supertest express
 npm install swagger-ui-express
 ```
 
-## How to run app in your local
+## How to run app WITH firebase emulator
+
+Configure emulator : 
+
+```bash
+cd functions
+firebase emulators:start
+```
+
+Execute project : 
+
+```bash
+firebase serve
+```
+
+http://localhost:5000/documentation/#/
+
+## How to run app WITHOUT firebase emulator
 
 Uncomment code in functions/index.js from line 24 to 28 to configure the server
 
@@ -76,7 +94,6 @@ app.listen(port, () => {
 
 Run :
 ```bash
-cd functions
 npm run local
 ```
 
@@ -85,10 +102,8 @@ Access the local Swagger documentation : http://localhost:3000/documentation/#/
 ## How to run Local tests with Jest
 
 ```bash
-cd functions
 npm test 
 ```
-
 
 ## How to update data
 
@@ -98,14 +113,35 @@ Copy the serviceAccountKey.json file to the root of your project.
 Run the following command:
 
 ```bash
-cd functions
 npm run data
 ```
 
 ## How to deploy in firebase after making changes
 
+Connect to your firebase account and run command :
+
 ```bash
-cd functions
-firebase login //use your login and your password
+firebase deploy --only functions --project calculationco2e
+```
+
+## How to deploy project in a new firebase account
+
+Create firebase account : (https://firebase.google.com/) and connect.
+
+Open terminal :
+
+```bash
+firebase login
+```
+
+Init the project :
+
+```bash
+firebase init
+```
+
+Deploy project :
+
+```bash
 firebase deploy --only functions --project calculationco2e
 ```
