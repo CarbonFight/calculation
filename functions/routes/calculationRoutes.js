@@ -10,7 +10,7 @@ router.get('/', async (req, res) => {
 
     if (category === "food") {
       if (action === "main") {
-        if (!category || !action || !option || !count || !side) {
+        if (!category || !action || !option || !side) {
         let errorMessage;
         if (!category) {
           errorMessage = "category is missing.";
@@ -18,8 +18,6 @@ router.get('/', async (req, res) => {
           errorMessage = "action is missing.";
         } else if (!option) {
           errorMessage = "option is missing.";
-        } else if (!count) {
-          errorMessage = "count is missing.";
         } else {
           errorMessage = "side is missing.";
         }
@@ -53,10 +51,11 @@ router.get('/', async (req, res) => {
   
     try {
       let result;
+      const counter = !count || count === "null" || count === undefined ? 1 : count;
       if (category !== "food") {
-        result = await calculation(category, action, option, count, side); 
+        result = await calculation(category, action, option, counter, side); 
       } else {
-        result = await calculationFood(category, action, option, count, side); 
+        result = await calculationFood(category, action, option, counter, side); 
       }
   
       const response = {
@@ -64,12 +63,9 @@ router.get('/', async (req, res) => {
           action: action,
           option: result[1],
           co2e: result[0],
-          hint: result[2] || ""
+          hint: result[2] || "",
+          count: parseInt(counter, 10)
       };
-  
-      if (count) {
-      response.count = parseInt(count, 10);
-      }
 
       if (category === "food" && action === "main" && side) {
         response.side = JSON.parse(side);
