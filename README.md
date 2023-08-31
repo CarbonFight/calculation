@@ -8,6 +8,10 @@ This repository contains backend serverless functions.
 # CalculationsCO2e
 "CalculationsCO2e" is an API that allows you to determine the CO2e emissions of a daily action based on the 250 most common CO2e emission factors.
 
+# Links
+Swagger :  [API Swagger](https://api.carbonfight.app/v1/documentation/#/)
+Codacy : [Codacy](https://app.codacy.com/gh/CarbonFight/calculation/dashboard)
+
 ## Requirements
 
 Install Nodejs
@@ -28,7 +32,11 @@ sudo npm install -g firebase-tools
 firebase login
 ```
 
-Install all project dependencies : 
+Install project dependencies : 
+
+```bash
+cd functions
+```
 
 ```bash
 npm install
@@ -50,30 +58,53 @@ npm install --save-dev jest
 npm install jest supertest express
 ```
 
-## How to run app (local)
+```bash
+npm install swagger-ui-express
+```
 
-Uncomment code in index.js Line 24 to Line 28
+## How to run app in your local
+
+Uncomment code in functions/index.js from line 24 to 28 to configure the server
+
+```bash
+const port = 3000;
+app.listen(port, () => {
+  console.log(`Le serveur écoute sur le port ${port}...`);
+});
+```
 
 Run :
 ```bash
-npm start
+cd functions
+npm run local
 ```
 
-Swagger : http://localhost:3000/api-docs/#/
+Access the local Swagger documentation : http://localhost:3000/documentation/#/
 
 ## How to run Local tests with Jest
 
 ```bash
+cd functions
 npm test 
 ```
 
 
 ## How to update data
 
-To update the data, follow these steps:
+To update data, follow these steps:
 
 Copy the serviceAccountKey.json file to the root of your project.
 Run the following command:
 
 ```bash
+cd functions
 npm run data
+```
+
+## How to deploy in firebase after making changes
+
+```bash
+cd functions
+firebase login //use your login and your password
+firebase deploy --only functions --project calculationco2e
+```
