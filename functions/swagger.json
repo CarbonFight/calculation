@@ -92,11 +92,12 @@
                   "$ref": "#/components/schemas/Calculations"
                 },
                 "example": {
-                  "category": "transport",
-                  "action": "train",
-                  "option": "TGV INOUI",
-                  "count": 250,
-                  "co2e": 750
+                  "category": "food",
+                  "action": "bread",
+                  "option": "Pain de mie",
+                  "count": 1,
+                  "co2e": 88,
+                  "hint": "Une portion de pain de 50g, correspondant à un petit pain que l'on trouve dans les cafétérias."
                 }
               }
             }
@@ -452,6 +453,10 @@
           "co2e": {
             "description": "L'émission CO2e en grammes",
             "type": "number"
+          },
+          "hint": {
+            "description": "Complément d'information sur l'action",
+            "type": "string"
           }
         }
       },
