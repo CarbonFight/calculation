@@ -121,7 +121,7 @@ npm run data
 Connect to your firebase account and run command :
 
 ```bash
-firebase deploy --only functions --project calculationco2e
+firebase deploy --only functions --project <nomduprojet>
 ```
 
 ## How to deploy project in a new firebase account
@@ -143,5 +143,5 @@ firebase init
 Deploy project :
 
 ```bash
-firebase deploy --only functions --project calculationco2e
+firebase deploy --only functions --project <nomduprojet>
 ```
