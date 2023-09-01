@@ -37,10 +37,10 @@ jobs:
     - name: Send Coverage to Codacy
       run: |
         curl -Ls https://coverage.codacy.com/get.sh | \
-        CODACY_API_TOKEN=${{ github.CODACY_API_TOKEN }} \
-        CODACY_ORGANIZATION_PROVIDER=${{ github.CODACY_ORGANIZATION_PROVIDER }} \
-        CODACY_PROJECT_NAME=${{ github.CODACY_PROJECT_NAME }} \
-        CODACY_USERNAME=${{ github.CODACY_USERNAME }} \
+        CODACY_API_TOKEN=${{ secrets.CODACY_API_TOKEN }} \
+        CODACY_ORGANIZATION_PROVIDER=${{ secrets.CODACY_ORGANIZATION_PROVIDER }} \
+        CODACY_PROJECT_NAME=${{ secrets.CODACY_PROJECT_NAME }} \
+        CODACY_USERNAME=${{ secrets.CODACY_USERNAME }} \
         bash -s report -l JavaScript -r ${{ github.workspace }}/functions/coverage/lcov.info
       
       
