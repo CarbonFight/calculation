@@ -109,10 +109,12 @@ npm test
 
 To update data, follow these steps:
 
-Copy the serviceAccountKey.json file to the root of your project.
+Copy the serviceAccountKey.json file into import folder.
 Run the following command:
 
 ```bash
+cd import
+npm install
 npm run data
 ```
 

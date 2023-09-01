@@ -70,3 +70,4 @@ node_modules/
 credentials.json
 node_modules/
 dumps
+serviceAccountKey.json
