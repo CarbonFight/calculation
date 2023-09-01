@@ -2,12 +2,12 @@
   {
     "country": "FR",
     "category": "transport",
-    "co2e": 24.9,
     "default": true,
     "active": true,
     "option": "Électrique",
     "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees",
-    "action": "kick scooter"
+    "action": "kick scooter",
+    "co2e": 24.9
   },
   {
     "co2e": 679,

@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "data": "node firestore_to_json.js"
+  },
+  "devDependencies": {
+    "firebase-admin": "^11.8.0",
+    "eslint": "^8.48.0"
+  }
+}
