@@ -1,1079 +1,1840 @@
 [
   {
     "country": "FR",
-    "category": "transport",
+    "co2e": 24.9,
     "default": true,
+    "unit": "kms",
     "active": true,
-    "option": "Électrique",
+    "action": "Trottinette",
     "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees",
-    "action": "kick scooter",
-    "co2e": 24.9
+    "category": "Trajets",
+    "option": "Électrique"
   },
   {
     "co2e": 679,
-    "action": "main",
-    "category": "food",
-    "option": "Poisson",
     "country": "FR",
-    "active": false
+    "action": "Principal",
+    "active": true,
+    "category": "Repas",
+    "option": "Poisson"
   },
   {
-    "category": "energy",
     "country": "FR",
-    "action": "electricity",
-    "option": "Bioéthanol",
     "co2e": 144,
-    "active": true
+    "active": true,
+    "action": "Electricité",
+    "category": "Logement",
+    "option": "Bioéthanol",
+    "amortization": 1,
+    "hint": "Indiquez votre consommation annuelle en kilowattheure indiquée sur votre facture annuelle d'électricité.",
+    "unit": "kWh"
+  },
+  {
+    "country": "FR",
+    "co2e": 500000,
+    "default": true,
+    "action": "Télévision",
+    "active": true,
+    "category": "Numérique",
+    "option": "49 pouces"
+  },
+  {
+    "country": "FR",
+    "co2e": 6.4,
+    "default": true,
+    "action": "Opérateur mobile",
+    "active": true,
+    "category": "Numérique",
+    "option": "Free"
   },
   {
     "co2e": 7.48,
-    "action": "train",
-    "category": "transport",
-    "option": "Eurostar",
     "country": "FR",
+    "unit": "kms",
     "active": true,
-    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf"
+    "action": "Train",
+    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf",
+    "category": "Trajets",
+    "option": "Eurostar"
   },
   {
     "co2e": 512,
-    "action": "drinks",
-    "category": "food",
-    "option": "Alcool",
-    "country": "FR"
+    "country": "FR",
+    "action": "Boissons",
+    "active": true,
+    "category": "Repas",
+    "option": "Alcool"
   },
   {
     "country": "FR",
-    "category": "clothes",
-    "option": "Veste imperméable ",
-    "action": "Manteau",
     "co2e": 41000,
-    "active": true,
     "default": true,
-    "source": "https://impactco2.fr/habillement/vesteimpermeable"
-  },
-  {
-    "country": "FR",
-    "category": "clothes",
     "action": "Manteau",
-    "option": "Manteau d'hiver",
-    "co2e": 99000,
     "active": true,
-    "source": "https://impactco2.fr/habillement/manteau"
+    "source": "https://impactco2.fr/habillement/vesteimpermeable",
+    "category": "Habits",
+    "option": "Veste imperméable "
   },
   {
     "country": "FR",
-    "category": "clothes",
-    "action": "Pull",
-    "option": "Sweat en coton",
+    "co2e": 360,
+    "unit": "paquets",
+    "default": true,
+    "action": "Cigarettes",
+    "active": true,
+    "category": "Objets",
+    "option": "Toutes marques"
+  },
+  {
+    "country": "FR",
+    "co2e": 90000,
+    "action": "Manteau",
+    "active": true,
+    "source": "https://impactco2.fr/habillement/manteau",
+    "category": "Habits",
+    "option": "Manteau d'hiver"
+  },
+  {
+    "country": "FR",
     "co2e": 31000,
-    "active": true,
-    "source": "https://impactco2.fr/habillement"
-  },
-  {
-    "country": "FR",
-    "category": "transport",
-    "action": "boat",
-    "co2e": 35.9,
-    "comments": "Bateau automoteur/400 à 649 TPL, ADEME",
-    "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees",
-    "option": "Péniche",
-    "active": true
-  },
-  {
-    "country": "FR",
-    "category": "clothes",
     "action": "Pull",
-    "co2e": 28000,
     "active": true,
     "source": "https://impactco2.fr/habillement",
+    "category": "Habits",
+    "option": "Sweat en coton"
+  },
+  {
+    "country": "FR",
+    "co2e": 35.9,
+    "unit": "heures",
+    "comments": "Bateau automoteur/400 à 649 TPL, ADEME",
+    "active": true,
+    "action": "Bateau",
+    "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees",
+    "category": "Trajets",
+    "option": "Péniche"
+  },
+  {
+    "country": "FR",
+    "co2e": 28000,
+    "action": "Pull",
+    "active": true,
+    "source": "https://impactco2.fr/habillement",
+    "category": "Habits",
     "option": "Acrylique "
   },
   {
     "co2e": 151,
-    "action": "desert",
-    "category": "food",
-    "option": "Crême dessert",
-    "country": "FR"
+    "country": "FR",
+    "action": "Dessert",
+    "active": true,
+    "category": "Repas",
+    "option": "Crême dessert"
   },
   {
     "co2e": 7.04,
-    "action": "train",
-    "category": "transport",
     "country": "FR",
     "default": false,
-    "option": "Transilien",
+    "unit": "kms",
     "active": true,
-    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf"
+    "action": "Train",
+    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf",
+    "category": "Trajets",
+    "option": "Transilien"
   },
   {
     "country": "FR",
-    "category": "transport",
-    "action": "boat",
-    "option": "Jet skis",
-    "co2e": 63.8,
+    "co2e": 63800,
+    "unit": "heures",
     "comments": "gCO2e par heure",
+    "active": true,
+    "action": "Bateau",
     "source": "https://skeptics.stackexchange.com/questions/23050/do-jet-skis-produce-in-an-hour-equivalent-pollution-to-100-000km-of-a-new-small",
-    "active": true
+    "category": "Trajets",
+    "option": "Jet skis"
+  },
+  {
+    "country": "FR",
+    "co2e": 82200,
+    "action": "Tablette",
+    "active": true,
+    "category": "Numérique",
+    "option": "Détachable"
+  },
+  {
+    "country": "FR",
+    "co2e": 85790,
+    "action": "Chauffage",
+    "category": "Logement",
+    "option": "Bûches Poêle à bois",
+    "amortization": 1,
+    "hint": "Indiquez votre consommation annuelle en stères de buches.",
+    "unit": "Stères"
+  },
+  {
+    "country": "FR",
+    "co2e": 1980,
+    "action": "Lecteur musique",
+    "active": true,
+    "category": "Numérique",
+    "option": "non tactile"
+  },
+  {
+    "country": "FR",
+    "co2e": 296000,
+    "action": "Ordinateur",
+    "active": true,
+    "category": "Numérique",
+    "option": "Fixe haute performance"
   },
   {
     "co2e": 100,
-    "action": "coffee",
-    "category": "food",
-    "option": "Expresso",
     "country": "FR",
-    "active": false
+    "default": true,
+    "action": "Café",
+    "active": true,
+    "category": "Repas",
+    "option": "Expresso"
   },
   {
     "country": "FR",
-    "category": "energy",
-    "option": "Mix Français",
-    "comments": "Mix énergétique Français",
-    "action": "electricity",
     "co2e": 17,
     "default": true,
+    "comments": "Mix énergétique Français",
     "active": true,
-    "source": "https://www.rte-france.com/eco2mix/les-emissions-de-co2-par-kwh-produit-en-france"
+    "action": "Electricité",
+    "source": "https://www.rte-france.com/eco2mix/les-emissions-de-co2-par-kwh-produit-en-france",
+    "category": "Logement",
+    "option": "Mix Français",
+    "amortization": 1,
+    "hint": "Indiquez votre consommation annuelle en kilowattheure indiquée sur votre facture annuelle d'électricité.",
+    "unit": "kWh"
   },
   {
-    "action": "car",
-    "category": "transport",
     "country": "FR",
-    "option": "Hybride",
     "co2e": 61.9,
+    "unit": "kms",
     "comments": "Voiture particulière/Coeur de gamme - Véhicule compact/Hybride, full, Prius",
+    "active": true,
+    "action": "Voiture",
     "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees",
-    "active": true
+    "category": "Trajets",
+    "option": "Hybride"
   },
   {
     "country": "FR",
-    "category": "transport",
-    "action": "boat",
-    "option": "Voilier à moteur",
     "co2e": 9430,
+    "unit": "heures",
     "comments": "g co2e / heure d'utilisation",
-    "active": true
+    "active": true,
+    "action": "Bateau",
+    "category": "Trajets",
+    "option": "Voilier à moteur"
   },
   {
-    "action": "train",
-    "category": "transport",
-    "option": "THALYS",
     "country": "FR",
-    "active": true,
     "co2e": 7,
-    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf"
+    "unit": "kms",
+    "active": true,
+    "action": "Train",
+    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf",
+    "category": "Trajets",
+    "option": "THALYS"
   },
   {
     "country": "FR",
-    "category": "clothes",
-    "action": "Chemise",
     "co2e": 13000,
-    "source": "https://impactco2.fr/habillement",
-    "active": true,
     "default": true,
+    "action": "Chemise",
+    "active": true,
+    "source": "https://impactco2.fr/habillement",
+    "category": "Habits",
     "option": "Coton"
   },
   {
     "country": "FR",
-    "category": "clothes",
+    "co2e": 1.2,
+    "unit": "euros",
+    "action": "Banque",
+    "active": true,
+    "category": "Services",
+    "option": "Crédit Agricole"
+  },
+  {
+    "country": "FR",
+    "co2e": 1.04,
+    "unit": "euros",
+    "action": "Banque",
+    "active": true,
+    "category": "Services",
+    "option": "BPCE"
+  },
+  {
+    "country": "FR",
+    "co2e": 1.78,
+    "unit": "euros",
+    "action": "Banque",
+    "active": true,
+    "category": "Services",
+    "option": "Société générale"
+  },
+  {
+    "country": "FR",
+    "co2e": 13400,
     "action": "Chaussure",
-    "option": "Cuir",
-    "co2e": 13000,
+    "active": true,
     "source": "https://impactco2.fr/habillement/chaussuresencuir",
-    "active": true
+    "category": "Habits",
+    "option": "Cuir"
   },
   {
     "co2e": 730,
-    "category": "energy",
-    "option": "Centrale fioul",
-    "action": "electricity",
-    "active": true,
     "country": "FR",
-    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie"
+    "active": true,
+    "action": "Electricité",
+    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie",
+    "category": "Logement",
+    "option": "Centrale fioul",
+    "amortization": 1,
+    "hint": "Indiquez votre consommation annuelle en kilowattheure indiquée sur votre facture annuelle d'électricité.",
+    "unit": "kWh"
+  },
+  {
+    "country": "FR",
+    "co2e": 301000,
+    "action": "Frigidaire",
+    "category": "Electroménager",
+    "option": "Congélateur coffre 261 L"
+  },
+  {
+    "country": "FR",
+    "co2e": 24800,
+    "action": "Chaise",
+    "category": "Mobilier",
+    "option": "Bois & Textile "
   },
   {
     "co2e": 75,
-    "action": "starter",
-    "category": "food",
-    "option": "Végétarienne",
     "country": "FR",
-    "active": false
+    "default": true,
+    "action": "Entrée",
+    "active": true,
+    "category": "Repas",
+    "option": "Végétarienne"
   },
   {
     "country": "FR",
-    "category": "clothes",
-    "option": "T-shirt en coton",
-    "action": "T-shirt",
     "co2e": 6000,
+    "default": true,
+    "action": "T-shirt",
     "active": true,
-    "default": true
+    "category": "Habits",
+    "option": "Coton"
   },
   {
-    "action": "train",
-    "category": "transport",
     "country": "FR",
-    "option": "Tramway",
-    "active": true,
     "co2e": 3.4,
-    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf"
+    "unit": "kms",
+    "active": true,
+    "action": "Train",
+    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf",
+    "category": "Trajets",
+    "option": "Tramway"
+  },
+  {
+    "country": "FR",
+    "co2e": 0.96,
+    "unit": "euros",
+    "action": "Banque",
+    "active": true,
+    "category": "Services",
+    "option": "La banque postale"
+  },
+  {
+    "country": "FR",
+    "co2e": 425000,
+    "action": "Immobilier",
+    "category": "Logement",
+    "option": "Maison ",
+    "amortization": 50
+  },
+  {
+    "country": "FR",
+    "co2e": 60100,
+    "default": true,
+    "action": "Table",
+    "category": "Mobilier",
+    "option": "Bois"
   },
   {
     "co2e": 300,
-    "action": "starter",
-    "category": "food",
-    "option": "Viande",
     "country": "FR",
-    "active": false
+    "action": "Entrée",
+    "active": true,
+    "category": "Repas",
+    "option": "Viande"
   },
   {
-    "category": "transport",
     "country": "FR",
-    "action": "metro",
-    "option": "Paris",
-    "default": true,
-    "comments": "Distance is not KM but number of stations // ~0.57 Km between 2 stations (Paris) // 2.5 gCo2e / km (Paris)",
+    "co2e": 16500,
+    "action": "Mobile",
+    "active": true,
+    "category": "Numérique",
+    "option": "classique"
+  },
+  {
+    "country": "FR",
     "co2e": 2.166,
-    "active": true
+    "default": true,
+    "unit": "arrêts",
+    "comments": "Distance is not KM but number of stations // ~0.57 Km between 2 stations (Paris) // 2.5 gCo2e / km (Paris)",
+    "active": true,
+    "action": "Métro",
+    "category": "Trajets",
+    "option": "Paris"
   },
   {
     "co2e": 115,
-    "action": "desert",
-    "category": "food",
-    "option": "Pâtisserie",
-    "country": "FR"
+    "country": "FR",
+    "action": "Dessert",
+    "active": true,
+    "category": "Repas",
+    "option": "Pâtisserie"
   },
   {
     "co2e": 418,
-    "category": "energy",
-    "option": "Centrale gaz",
-    "action": "electricity",
-    "active": true,
     "country": "FR",
-    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie"
+    "active": true,
+    "action": "Electricité",
+    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie",
+    "category": "Logement",
+    "option": "Centrale gaz",
+    "amortization": 1,
+    "hint": "Indiquez votre consommation annuelle en kilowattheure indiquée sur votre facture annuelle d'électricité.",
+    "unit": "kWh"
   },
   {
     "co2e": 100,
-    "action": "drinks",
-    "category": "food",
-    "option": "Eau en bouteille",
-    "country": "FR"
+    "country": "FR",
+    "default": true,
+    "action": "Boissons",
+    "active": true,
+    "category": "Repas",
+    "option": "Eau en bouteille"
+  },
+  {
+    "country": "FR",
+    "co2e": 144000,
+    "action": "Immobilier",
+    "category": "Logement",
+    "option": "Logement écoconçu",
+    "amortization": 50
   },
   {
     "co2e": 2395,
-    "action": "main",
-    "category": "food",
-    "option": "Viande rouge",
     "country": "FR",
-    "active": false
+    "action": "Principal",
+    "active": true,
+    "category": "Repas",
+    "option": "Viande rouge"
+  },
+  {
+    "country": "FR",
+    "co2e": 115000,
+    "action": "Lit",
+    "active": true,
+    "category": "Mobilier",
+    "option": "cadre de lit"
+  },
+  {
+    "country": "FR",
+    "co2e": 5900000,
+    "action": "Voiture",
+    "category": "Objets",
+    "option": "Hydrogène"
   },
   {
     "co2e": 2.99,
-    "action": "train",
-    "category": "transport",
-    "option": "TGV INOUI",
     "country": "FR",
+    "unit": "kms",
     "active": true,
-    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf"
+    "action": "Train",
+    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf",
+    "category": "Trajets",
+    "option": "TGV INOUI"
   },
   {
     "co2e": 16.8,
-    "action": "cheese",
-    "category": "food",
-    "option": "Emmental",
-    "country": "FR"
+    "country": "FR",
+    "default": true,
+    "action": "Fromage",
+    "active": true,
+    "category": "Repas",
+    "option": "Emmental"
+  },
+  {
+    "country": "FR",
+    "co2e": 305000,
+    "action": "Lave-linge",
+    "category": "Electroménager",
+    "option": "capacité 5 kg"
+  },
+  {
+    "country": "FR",
+    "co2e": 40900,
+    "action": "Tablette",
+    "active": true,
+    "category": "Numérique",
+    "option": "Mini "
+  },
+  {
+    "country": "FR",
+    "co2e": 169000,
+    "action": "Ordinateur",
+    "active": true,
+    "category": "Numérique",
+    "option": "Fixe bureautique"
   },
   {
     "co2e": 120,
-    "action": "side",
-    "category": "food",
-    "option": "Blé",
     "country": "FR",
-    "active": false
+    "action": "Accompagnement",
+    "active": true,
+    "category": "Repas",
+    "option": "Blé"
   },
   {
-    "category": "transport",
     "country": "FR",
-    "action": "coach",
-    "option": "Agglomération",
     "co2e": 146,
+    "unit": "kms",
     "active": true,
-    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf"
+    "action": "Autocar",
+    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf",
+    "category": "Trajets",
+    "option": "Agglomération"
   },
   {
     "co2e": 1.15,
-    "action": "train",
-    "category": "transport",
-    "option": "OUIGO",
     "country": "FR",
+    "unit": "kms",
     "active": true,
-    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf"
+    "action": "Train",
+    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf",
+    "category": "Trajets",
+    "option": "OUIGO"
   },
   {
     "co2e": 22.8,
-    "action": "cheese",
-    "category": "food",
-    "option": "Cheddar",
-    "country": "FR"
+    "country": "FR",
+    "action": "Fromage",
+    "active": true,
+    "category": "Repas",
+    "option": "Cheddar"
   },
   {
     "country": "FR",
-    "category": "transport",
-    "action": "boat",
-    "comments": "Transport maritime par ferry (dont flotte, utilisation et infrastructure) [tkm], GLO, ADEME",
-    "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees",
     "co2e": 195,
-    "option": "Ferry",
-    "active": true
+    "unit": "heures",
+    "comments": "Transport maritime par ferry (dont flotte, utilisation et infrastructure) [tkm], GLO, ADEME",
+    "active": true,
+    "action": "Bateau",
+    "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees",
+    "category": "Trajets",
+    "option": "Ferry"
+  },
+  {
+    "country": "FR",
+    "co2e": 73700,
+    "default": true,
+    "action": "Console",
+    "active": true,
+    "category": "Numérique",
+    "option": "Console de salon"
   },
   {
     "co2e": 18,
-    "action": "cheese",
-    "category": "food",
-    "option": "Gorgonzola",
-    "country": "FR"
+    "country": "FR",
+    "action": "Fromage",
+    "active": true,
+    "category": "Repas",
+    "option": "Gorgonzola"
+  },
+  {
+    "country": "FR",
+    "co2e": 30800,
+    "action": "Console",
+    "active": true,
+    "category": "Numérique",
+    "option": "Console portable"
   },
   {
     "co2e": 130,
-    "action": "main",
-    "category": "food",
-    "option": "Oeuf",
     "country": "FR",
-    "active": false
+    "action": "Principal",
+    "active": true,
+    "category": "Repas",
+    "option": "Oeuf"
+  },
+  {
+    "country": "FR",
+    "co2e": 34.5,
+    "default": true,
+    "grammesPerPortion": 50,
+    "hint": "Une portion de pain de 50g, correspondant à un petit pain que l'on trouve dans les cafétérias.",
+    "action": "Pain",
+    "active": true,
+    "category": "Repas",
+    "co2PerGrammes": 0.69,
+    "option": "Baguette"
   },
   {
     "co2e": 16,
-    "action": "electricity",
-    "category": "energy",
-    "option": "Biométhane ",
     "country": "FR",
     "active": true,
-    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie"
+    "action": "Electricité",
+    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie",
+    "category": "Logement",
+    "option": "Biométhane ",
+    "amortization": 1,
+    "hint": "Indiquez votre consommation annuelle en kilowattheure indiquée sur votre facture annuelle d'électricité.",
+    "unit": "kWh"
   },
   {
-    "category": "transport",
     "country": "FR",
-    "action": "coach",
-    "option": "Autoroute",
     "co2e": 29.5,
     "default": true,
+    "unit": "kms",
     "active": true,
-    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf"
+    "action": "Autocar",
+    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf",
+    "category": "Trajets",
+    "option": "Autoroute"
   },
   {
     "country": "FR",
-    "category": "energy",
-    "action": "electricity",
-    "option": "Fioul domestique",
+    "co2e": 82700,
+    "action": "Four",
+    "category": "Electroménager",
+    "option": "Mini four électrique"
+  },
+  {
+    "country": "FR",
+    "co2e": 39100,
+    "action": "Mobile",
+    "active": true,
+    "category": "Numérique",
+    "option": "> 5,5 pouces"
+  },
+  {
+    "country": "FR",
     "co2e": 314,
     "active": true,
-    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie"
+    "action": "Electricité",
+    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie",
+    "category": "Logement",
+    "option": "Fioul domestique",
+    "amortization": 1,
+    "hint": "Indiquez votre consommation annuelle en kilowattheure indiquée sur votre facture annuelle d'électricité.",
+    "unit": "kWh"
   },
   {
     "co2e": 950,
-    "action": "main",
-    "category": "food",
-    "option": "Pizza",
     "country": "FR",
-    "active": false
+    "action": "Principal",
+    "active": true,
+    "category": "Repas",
+    "option": "Pizza"
+  },
+  {
+    "country": "FR",
+    "co2e": 4400,
+    "active": true,
+    "action": "Sous-vêtements",
+    "category": "Habits",
+    "option": "slip"
+  },
+  {
+    "country": "FR",
+    "co2e": 27600,
+    "action": "Mobile",
+    "active": true,
+    "category": "Numérique",
+    "option": "< 4,5 pouces"
+  },
+  {
+    "country": "FR",
+    "co2e": 19100,
+    "action": "Chauffage",
+    "category": "Logement",
+    "option": "Plaquettes Poêle à bois",
+    "amortization": 1,
+    "hint": "Un MAP est un mètre cube apparent",
+    "unit": "MAP"
+  },
+  {
+    "country": "FR",
+    "co2e": 156000,
+    "default": true,
+    "action": "Ordinateur",
+    "active": true,
+    "category": "Numérique",
+    "option": "Portable"
   },
   {
     "co2e": 120,
-    "action": "side",
-    "category": "food",
-    "option": "Pâtes",
     "country": "FR",
-    "active": false
+    "default": true,
+    "action": "Accompagnement",
+    "active": true,
+    "category": "Repas",
+    "option": "Pâtes"
   },
   {
-    "category": "clothes",
     "country": "FR",
-    "action": "Robe",
     "co2e": 55000,
-    "active": true,
     "default": true,
+    "action": "Robe",
+    "active": true,
     "source": "https://impactco2.fr/habillement/robeencoton",
+    "category": "Habits",
     "option": "Coton"
   },
   {
     "co2e": 6.73,
-    "action": "train",
-    "category": "transport",
     "country": "FR",
-    "option": "Intercités",
+    "unit": "kms",
     "active": true,
-    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf"
+    "action": "Train",
+    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf",
+    "category": "Trajets",
+    "option": "Intercités"
+  },
+  {
+    "country": "FR",
+    "co2e": 371000,
+    "action": "Télévision",
+    "active": true,
+    "category": "Numérique",
+    "option": "40-49 pouces"
+  },
+  {
+    "country": "FR",
+    "co2e": 961000,
+    "action": "Lave-vaiselle",
+    "category": "Electroménager",
+    "option": "professionnel"
   },
   {
     "co2e": 30.9,
-    "action": "cheese",
-    "category": "food",
-    "option": "Grana padano",
-    "country": "FR"
-  },
-  {
-    "action": "bus",
-    "category": "transport",
     "country": "FR",
-    "option": "Hors RATP",
-    "co2e": 110,
+    "action": "Fromage",
     "active": true,
-    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf"
+    "category": "Repas",
+    "option": "Grana padano"
   },
   {
     "country": "FR",
-    "category": "transport",
-    "action": "flight",
-    "option": "Court courrier",
+    "co2e": 2450,
+    "default": true,
+    "action": "Chauffage",
+    "category": "Logement",
+    "option": "Granulés Poêle à bois",
+    "amortization": 1,
+    "hint": "Un sac standard de granulés pèse 15 Kgs. Indiquez votre consommation annuelle.",
+    "unit": "Sacs"
+  },
+  {
+    "country": "FR",
+    "co2e": 110,
+    "unit": "kms",
+    "active": true,
+    "action": "Bus",
+    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf",
+    "category": "Trajets",
+    "option": "Hors RATP"
+  },
+  {
+    "country": "FR",
+    "co2e": 83000,
+    "action": "Aspirateur",
+    "category": "Electroménager",
+    "option": "Professionnel à traîneaux"
+  },
+  {
+    "country": "FR",
+    "co2e": 182000,
+    "action": "Canapé",
+    "category": "Mobilier",
+    "option": "Cuir"
+  },
+  {
+    "country": "FR",
     "co2e": 141,
+    "unit": "kms",
     "comments": "Avion passagers/Court courrier, 2018/SANS trainées, ADEME",
     "active": true,
-    "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+    "action": "Avion",
+    "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees",
+    "category": "Trajets",
+    "option": "Court courrier"
   },
   {
-    "category": "transport",
     "country": "FR",
-    "action": "moto",
-    "default": true,
-    "option": "< 250 cm3",
     "co2e": 61,
+    "unit": "kms",
+    "default": false,
     "active": true,
-    "source": "https://base-empreinte.ademe.fr/documentation/base-carbone?docLink=Routier2"
+    "action": "Moto",
+    "source": "https://base-empreinte.ademe.fr/documentation/base-carbone?docLink=Routier2",
+    "category": "Trajets",
+    "option": "< 250 cm3"
+  },
+  {
+    "co2e": 335000,
+    "country": "FR",
+    "default": true,
+    "action": "Lit",
+    "active": true,
+    "category": "Mobilier",
+    "option": "Matelas à ressorts & Sommier en tissu"
+  },
+  {
+    "country": "FR",
+    "co2e": 5680000,
+    "action": "Voiture",
+    "category": "Objets",
+    "option": "Hybride"
   },
   {
     "co2e": 335,
-    "action": "drinks",
-    "category": "food",
-    "option": "Boisson chaude",
-    "country": "FR"
+    "country": "FR",
+    "action": "Boissons",
+    "active": true,
+    "category": "Repas",
+    "option": "Boisson chaude"
   },
   {
     "country": "FR",
-    "category": "clothes",
-    "action": "Pull",
     "co2e": 56000,
+    "action": "Pull",
     "active": true,
     "source": "https://impactco2.fr/habillement",
+    "category": "Habits",
     "option": "Laine"
   },
   {
     "country": "FR",
-    "category": "clothes",
-    "action": "Chemise",
     "co2e": 12000,
-    "source": "https://impactco2.fr/habillement",
+    "action": "Chemise",
     "active": true,
+    "source": "https://impactco2.fr/habillement",
+    "category": "Habits",
     "option": "Viscose"
   },
   {
-    "category": "clothes",
     "country": "FR",
-    "action": "Robe",
     "co2e": 50000,
+    "action": "Robe",
     "active": true,
     "source": "https://impactco2.fr/habillement/robeenviscose",
+    "category": "Habits",
     "option": "Viscose"
   },
   {
     "co2e": 650,
-    "action": "main",
-    "category": "food",
-    "option": "Viande blanche",
     "country": "FR",
-    "active": false
+    "action": "Principal",
+    "active": true,
+    "category": "Repas",
+    "option": "Viande blanche"
   },
   {
-    "action": "car",
-    "category": "transport",
     "country": "FR",
-    "option": "Hydrogène",
+    "co2e": 197000,
+    "action": "Canapé",
+    "category": "Mobilier",
+    "option": "Convertible"
+  },
+  {
+    "country": "FR",
     "co2e": 19.4,
+    "unit": "kms",
     "comments": "Voiture particulière/Berline/Hydrogène électrolyse mix France décentralisée",
+    "active": true,
+    "action": "Voiture",
     "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees",
-    "active": true
+    "category": "Trajets",
+    "option": "Hydrogène"
+  },
+  {
+    "country": "FR",
+    "co2e": 257000,
+    "default": true,
+    "action": "Frigidaire",
+    "category": "Electroménager",
+    "option": "Réfrigérateur combiné"
   },
   {
     "co2e": 55,
-    "action": "main",
-    "category": "food",
-    "option": "Végétarien",
     "country": "FR",
-    "active": false
+    "default": true,
+    "action": "Principal",
+    "active": true,
+    "category": "Repas",
+    "option": "Végétarien"
   },
   {
     "country": "FR",
-    "category": "clothes",
-    "action": "Pull",
     "co2e": 12000,
     "default": true,
+    "action": "Pull",
     "active": true,
     "source": "https://impactco2.fr/habillement",
+    "category": "Habits",
     "option": "Coton recyclé "
   },
   {
-    "co2e": 6.2,
-    "action": "train",
-    "category": "transport",
-    "option": "RER",
+    "co2e": 276300,
     "country": "FR",
+    "action": "Lit",
     "active": true,
-    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf"
+    "category": "Mobilier",
+    "option": "Matelas à ressorts & à lattes"
+  },
+  {
+    "co2e": 6.2,
+    "country": "FR",
+    "unit": "kms",
+    "active": true,
+    "action": "Avion",
+    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf",
+    "category": "Trajets",
+    "option": "RER"
   },
   {
     "country": "FR",
-    "category": "transport",
-    "action": "flight",
+    "co2e": 1.64,
+    "unit": "euros",
+    "action": "Banque",
     "active": true,
-    "source": "https://www.sciencesetavenir.fr/nature-environnement/climat/l-impact-ecologique-demesure-des-jets-prives_164673",
-    "comments": "jet privé Bernard Arnault",
+    "category": "Services",
+    "option": "BNP Paribas"
+  },
+  {
+    "country": "FR",
     "co2e": 4600,
+    "unit": "kms",
+    "comments": "jet privé Bernard Arnault",
+    "active": true,
+    "action": "Avion",
+    "source": "https://www.sciencesetavenir.fr/nature-environnement/climat/l-impact-ecologique-demesure-des-jets-prives_164673",
+    "category": "Trajets",
     "option": "Jet privé"
   },
   {
-    "category": "transport",
     "country": "FR",
-    "action": "scooter",
-    "option": "Électrique",
-    "co2e": 20,
-    "active": true,
-    "source": "https://youmatter.world/fr/moto-scooter-impact-ecologique/"
+    "co2e": 865000,
+    "action": "Four",
+    "category": "Electroménager",
+    "option": "Professionnel"
   },
   {
-    "category": "clothes",
     "country": "FR",
-    "action": "Robe",
+    "co2e": 4740000,
+    "default": true,
+    "action": "Voiture",
+    "category": "Objets",
+    "option": "Thermique"
+  },
+  {
+    "country": "FR",
+    "co2e": 20,
+    "unit": "kms",
+    "active": true,
+    "action": "Scooter",
+    "source": "https://youmatter.world/fr/moto-scooter-impact-ecologique/",
+    "category": "Trajets",
+    "option": "Électrique"
+  },
+  {
+    "country": "FR",
     "co2e": 56000,
+    "action": "Robe",
     "active": true,
     "source": "https://impactco2.fr/habillement/robeenpolyester",
+    "category": "Habits",
     "option": "Polyester"
   },
   {
-    "category": "food",
-    "option": "Pain aux céréales, graines",
-    "action": "bread",
-    "active": true,
-    "hint": "Une portion de pain de 50g, correspondant à un petit pain que l'on trouve dans les cafétérias.",
-    "co2PerGrammes": 1.04,
-    "grammesPerPortion": 50,
-    "source": "https://agribalyse.ademe.fr/app/aliments/7255#Pain,_baguette_ou_boule,_aux_c%C3%A9r%C3%A9ales_et_graines,_artisanal",
     "co2e": 52,
-    "country": "FR"
+    "country": "FR",
+    "grammesPerPortion": 50,
+    "hint": "Une portion de pain de 50g, correspondant à un petit pain que l'on trouve dans les cafétérias.",
+    "active": true,
+    "action": "Pain",
+    "source": "https://agribalyse.ademe.fr/app/aliments/7255#Pain,_baguette_ou_boule,_aux_c%C3%A9r%C3%A9ales_et_graines,_artisanal",
+    "category": "Repas",
+    "co2PerGrammes": 1.04,
+    "option": "Pain aux céréales, graines"
+  },
+  {
+    "country": "FR",
+    "co2e": 10020000,
+    "action": "Voiture",
+    "category": "Objets",
+    "option": "Électrique"
+  },
+  {
+    "country": "FR",
+    "co2e": 63200,
+    "default": true,
+    "action": "Tablette",
+    "active": true,
+    "category": "Numérique",
+    "option": "Classique 9-11 pouces"
   },
   {
     "co2e": 288,
-    "action": "desert",
-    "category": "food",
-    "option": "Yaourt",
-    "country": "FR"
+    "country": "FR",
+    "action": "Dessert",
+    "active": true,
+    "category": "Repas",
+    "option": "Yaourt"
   },
   {
     "country": "FR",
-    "category": "transport",
-    "action": "flight",
-    "comments": "Avion passagers/Moyen courrier, 2018/SANS trainées, ADEME",
-    "option": "Moyen courrier",
     "co2e": 103,
+    "unit": "kms",
+    "comments": "Avion passagers/Moyen courrier, 2018/SANS trainées, ADEME",
     "active": true,
-    "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+    "action": "Avion",
+    "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees",
+    "category": "Trajets",
+    "option": "Moyen courrier"
   },
   {
     "country": "FR",
-    "category": "clothes",
+    "co2e": 17300,
+    "default": true,
     "action": "Chaussure",
-    "option": "Tissu",
-    "co2e": 17000,
-    "source": "https://impactco2.fr/habillement/chaussuresentissu",
     "active": true,
-    "default": true
+    "source": "https://impactco2.fr/habillement/chaussuresentissu",
+    "category": "Habits",
+    "option": "Tissu"
+  },
+  {
+    "country": "FR",
+    "co2e": 235000,
+    "action": "Lave-vaiselle",
+    "category": "Electroménager",
+    "option": "9 couverts"
+  },
+  {
+    "country": "FR",
+    "co2e": 32800,
+    "default": true,
+    "action": "Mobile",
+    "active": true,
+    "category": "Numérique",
+    "option": "5 pouces"
+  },
+  {
+    "country": "FR",
+    "co2e": 2800,
+    "action": "Télévision",
+    "active": true,
+    "category": "Numérique",
+    "option": "Télécommande"
   },
   {
     "co2e": 45.62,
-    "action": "cheese",
-    "category": "food",
-    "option": "Mozzarella",
-    "country": "FR"
+    "country": "FR",
+    "action": "Fromage",
+    "active": true,
+    "category": "Repas",
+    "option": "Mozzarella"
   },
   {
     "co2e": 13.41,
-    "action": "cheese",
-    "category": "food",
-    "option": "Cream cheese allégé",
-    "country": "FR"
+    "country": "FR",
+    "action": "Fromage",
+    "active": true,
+    "category": "Repas",
+    "option": "Cream cheese allégé"
   },
   {
     "country": "FR",
-    "category": "clothes",
-    "action": "Chemise",
-    "option": "Polo",
+    "co2e": 907000,
+    "default": true,
+    "action": "Armoire",
+    "category": "Mobilier",
+    "option": "Armoire en bois"
+  },
+  {
+    "country": "FR",
     "co2e": 10000,
+    "action": "Chemise",
+    "active": true,
     "source": "https://impactco2.fr/habillement",
-    "active": true
+    "category": "Habits",
+    "option": "Polo"
   },
   {
-    "action": "bike",
-    "category": "transport",
-    "option": "Électrique",
     "country": "FR",
-    "active": false,
     "co2e": 22,
-    "source": "European Cyclists’ Federation (ECF), “Quantifying CO2 savings of Cycling.” 2011."
+    "unit": "kms",
+    "active": false,
+    "action": "Vélo",
+    "source": "European Cyclists’ Federation (ECF), “Quantifying CO2 savings of Cycling.” 2011.",
+    "category": "Trajets",
+    "option": "Électrique"
   },
   {
     "country": "FR",
-    "category": "transport",
-    "action": "boat",
-    "option": "Yachts ",
     "co2e": 242000,
+    "unit": "heure",
     "comments": "g co2e / heure d'utilisation",
-    "active": true
+    "active": true,
+    "action": "Bateau",
+    "category": "Trajets",
+    "option": "Yachts "
+  },
+  {
+    "country": "FR",
+    "co2e": 2700,
+    "active": true,
+    "action": "Sous-vêtements",
+    "category": "Habits",
+    "option": "lingerie féminine"
   },
   {
     "co2e": 100,
-    "action": "coffee",
-    "category": "food",
-    "option": "Capsule",
     "country": "FR",
-    "default": false
-  },
-  {
-    "country": "FR",
-    "category": "clothes",
-    "option": "Veste simili-cuir",
-    "action": "Manteau",
-    "co2e": 26000,
+    "default": false,
+    "action": "Café",
     "active": true,
-    "source": "https://impactco2.fr/habillement/vestesimilicuir"
+    "category": "Repas",
+    "option": "Capsule"
   },
   {
-    "category": "transport",
     "country": "FR",
-    "action": "scooter",
-    "option": "Thermique",
+    "co2e": 52400,
+    "action": "Aspirateur",
+    "category": "Electroménager",
+    "option": "Domestique sans sac"
+  },
+  {
+    "country": "FR",
+    "co2e": 40200,
     "default": true,
-    "co2e": 80,
+    "action": "Cadre photo",
     "active": true,
-    "source": "https://youmatter.world/fr/moto-scooter-impact-ecologique/"
+    "category": "Numérique",
+    "option": "Cadre photo numérique"
+  },
+  {
+    "country": "FR",
+    "co2e": 26000,
+    "action": "Manteau",
+    "active": true,
+    "source": "https://impactco2.fr/habillement/vestesimilicuir",
+    "category": "Habits",
+    "option": "Veste simili-cuir"
+  },
+  {
+    "country": "FR",
+    "co2e": 525000,
+    "default": true,
+    "action": "Immobilier",
+    "category": "Logement",
+    "option": "Appartement",
+    "amortization": 50
+  },
+  {
+    "country": "FR",
+    "co2e": 18600,
+    "default": true,
+    "action": "Chaise",
+    "category": "Mobilier",
+    "option": "Bois "
+  },
+  {
+    "country": "FR",
+    "co2e": 3800,
+    "default": true,
+    "active": true,
+    "action": "Sous-vêtements",
+    "category": "Habits",
+    "option": "boxer"
+  },
+  {
+    "country": "FR",
+    "co2e": 80,
+    "default": true,
+    "unit": "kms",
+    "active": true,
+    "action": "Scooter",
+    "source": "https://youmatter.world/fr/moto-scooter-impact-ecologique/",
+    "category": "Trajets",
+    "option": "Thermique"
   },
   {
     "co2e": 23,
-    "action": "desert",
-    "category": "food",
-    "option": "Fruits",
-    "country": "FR"
+    "country": "FR",
+    "default": true,
+    "action": "Dessert",
+    "active": true,
+    "category": "Repas",
+    "option": "Fruits"
   },
   {
-    "category": "food",
-    "action": "bread",
-    "source": "https://agribalyse.ademe.fr/app/aliments/7200#Pain_de_mie,_courant",
-    "option": "Pain de mie",
-    "co2PerGrammes": 1.76,
+    "country": "FR",
+    "co2e": 2,
+    "unit": "Mo",
+    "default": true,
+    "action": "Stockage",
+    "active": true,
+    "category": "Numérique",
+    "option": "Stockage cloud"
+  },
+  {
+    "country": "FR",
+    "co2e": 2070,
+    "action": "Chauffage",
+    "category": "Logement",
+    "option": "Granulés chaudière",
+    "amortization": 1,
+    "hint": "Un MAP est un mètre cube apparent. Indiquez votre consommation annuelle.",
+    "unit": "Sacs"
+  },
+  {
+    "country": "FR",
+    "co2e": 340000,
+    "action": "Télévision",
+    "active": true,
+    "category": "Numérique",
+    "option": "30-40 pouces"
+  },
+  {
+    "co2e": 88,
+    "country": "FR",
     "grammesPerPortion": 50,
     "hint": "Une portion de pain de 50g, correspondant à un petit pain que l'on trouve dans les cafétérias.",
     "active": true,
-    "co2e": 88,
-    "country": "FR"
+    "action": "Pain",
+    "source": "https://agribalyse.ademe.fr/app/aliments/7200#Pain_de_mie,_courant",
+    "category": "Repas",
+    "co2PerGrammes": 1.76,
+    "option": "Pain de mie"
+  },
+  {
+    "country": "FR",
+    "co2e": 47300,
+    "default": true,
+    "action": "Aspirateur",
+    "category": "Electroménager",
+    "option": "Domestique à sac"
   },
   {
     "co2e": 3.23,
-    "action": "train",
-    "category": "transport",
-    "option": "LYRIA",
     "country": "FR",
+    "unit": "kms",
     "active": true,
-    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf"
+    "action": "Train",
+    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf",
+    "category": "Trajets",
+    "option": "LYRIA"
   },
   {
     "country": "FR",
-    "option": "T-shirt en polyester",
     "co2e": 6000,
-    "category": "clothes",
     "action": "T-shirt",
-    "active": true
+    "active": true,
+    "category": "Habits",
+    "option": "Polyester"
   },
   {
     "co2e": 0,
-    "action": "drinks",
-    "category": "food",
-    "option": "Eau du robinet",
-    "country": "FR"
+    "country": "FR",
+    "action": "Boissons",
+    "active": true,
+    "category": "Repas",
+    "option": "Eau du robinet"
   },
   {
     "co2e": 270,
-    "category": "energy",
-    "option": "Propane",
-    "action": "electricity",
-    "active": true,
     "country": "FR",
-    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie"
+    "active": true,
+    "action": "Electricité",
+    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie",
+    "category": "Logement",
+    "option": "Propane",
+    "amortization": 1,
+    "hint": "Indiquez votre consommation annuelle en kilowattheure indiquée sur votre facture annuelle d'électricité.",
+    "unit": "kWh"
   },
   {
     "co2e": 26.75,
-    "action": "cheese",
-    "category": "food",
-    "option": "Camembert",
-    "country": "FR"
-  },
-  {
     "country": "FR",
-    "category": "food",
-    "action": "bread",
-    "co2PerGrammes": 0.69,
-    "hint": "Une portion de pain de 50g, correspondant à un petit pain que l'on trouve dans les cafétérias.",
-    "grammesPerPortion": 50,
-    "co2e": 34.5,
+    "action": "Fromage",
     "active": true,
-    "option": "Pain de campagne",
-    "source": "https://agribalyse.ademe.fr/app/aliments/7261#Pain_de_campagne_maison_(avec_farine_pour_machine_%C3%A0_pain)"
+    "category": "Repas",
+    "option": "Camembert"
   },
   {
     "country": "FR",
-    "category": "transport",
-    "action": "boat",
-    "option": "Navette fluviale",
-    "co2e": 64.3,
-    "comments": "Navette fluviale/Donnée 2009, ADEME",
-    "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees",
-    "active": true,
-    "default": true
-  },
-  {
-    "co2e": 170,
-    "action": "drinks",
-    "category": "food",
-    "option": "Soda",
-    "country": "FR",
-    "active": false
-  },
-  {
-    "co2e": 58,
-    "action": "desert",
-    "category": "food",
-    "option": "Fruits transformés",
-    "country": "FR"
-  },
-  {
-    "co2e": 273,
-    "category": "energy",
-    "option": "Butane",
-    "action": "electricity",
-    "active": true,
-    "country": "FR",
-    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie"
-  },
-  {
-    "category": "transport",
-    "country": "FR",
-    "action": "flight",
-    "default": true,
-    "option": "Long courrier",
-    "co2e": 83.2,
-    "active": true,
-    "comments": "Avion passagers/Long courrier, 2018/SANS trainées, ADEME",
-    "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-  },
-  {
-    "co2e": 26.93,
-    "action": "train",
-    "category": "transport",
-    "option": "TER",
-    "country": "FR",
-    "default": true,
-    "active": true,
-    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf"
-  },
-  {
-    "action": "car",
-    "category": "transport",
-    "option": "Thermique",
-    "country": "FR",
-    "default": true,
-    "co2e": 119,
-    "comments": "Voiture moyenne/Mixte/2018",
-    "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees",
-    "active": true
-  },
-  {
-    "co2e": 150,
-    "action": "starter",
-    "category": "food",
-    "option": "Mixte",
-    "country": "FR",
-    "active": false
-  },
-  {
-    "co2e": 25.41,
-    "action": "cheese",
-    "category": "food",
-    "option": "Gouda",
-    "country": "FR"
-  },
-  {
-    "co2e": 51,
-    "action": "cheese",
-    "category": "food",
-    "option": "Pecorino",
-    "country": "FR"
-  },
-  {
-    "co2e": 237,
-    "action": "drinks",
-    "category": "food",
-    "option": "Soupe",
-    "country": "FR",
-    "active": false
-  },
-  {
-    "co2e": 102,
-    "action": "side",
-    "category": "food",
-    "option": "Pommes de terre",
-    "country": "FR",
-    "active": false
-  },
-  {
-    "category": "transport",
-    "country": "FR",
-    "action": "bike",
-    "option": "Classique",
-    "default": true,
-    "active": false,
-    "co2e": 21,
-    "source": "European Cyclists’ Federation (ECF), “Quantifying CO2 savings of Cycling.” 2011."
-  },
-  {
-    "co2e": 120,
-    "action": "side",
-    "category": "food",
-    "option": "Riz",
-    "country": "FR",
-    "active": false
-  },
-  {
-    "co2e": 55,
-    "action": "side",
-    "category": "food",
-    "option": "Légumes",
-    "country": "FR",
-    "active": false
-  },
-  {
-    "co2e": 10.2,
-    "action": "cheese",
-    "category": "food",
-    "option": "Cottage cheese",
-    "country": "FR"
-  },
-  {
-    "category": "clothes",
-    "country": "FR",
-    "action": "Pantalon",
-    "option": "Jean",
-    "co2e": 24000,
-    "default": true,
-    "active": true,
-    "source": "https://impactco2.fr/habillement/jeans"
-  },
-  {
-    "co2e": 140,
-    "action": "desert",
-    "category": "food",
-    "option": "Glace",
-    "country": "FR"
-  },
-  {
-    "action": "car",
-    "category": "transport",
-    "option": "Électrique",
-    "country": "FR",
-    "co2e": 12.4,
-    "comments": "Voiture particulière/Coeur de gamme - Véhicule compact/Electrique",
-    "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees",
-    "active": true
-  },
-  {
-    "co2e": 20.76,
-    "action": "cheese",
-    "category": "food",
-    "option": "Cream cheese",
-    "country": "FR"
-  },
-  {
-    "country": "FR",
-    "category": "transport",
-    "action": "boat",
-    "option": "Hors-bord",
-    "co2e": 40000,
-    "comments": "gco2e / heure d'utilisation",
-    "active": true
-  },
-  {
-    "country": "FR",
-    "category": "energy",
-    "option": "Photovoltaïque ",
-    "co2e": 44,
-    "action": "electricity",
-    "active": true,
-    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie"
-  },
-  {
-    "co2e": 475,
-    "action": "drinks",
-    "category": "food",
-    "option": "Jus de fruit",
-    "country": "FR",
-    "active": false
-  },
-  {
-    "country": "FR",
-    "category": "clothes",
-    "action": "Chaussure",
-    "option": "Sport",
-    "co2e": 19000,
-    "source": "https://impactco2.fr/habillement/chaussuresdesport",
-    "active": true
-  },
-  {
-    "co2e": 9.72,
-    "action": "cheese",
-    "category": "food",
-    "option": "Fromage frais",
-    "country": "FR"
-  },
-  {
-    "action": "bus",
-    "category": "transport",
-    "country": "FR",
-    "option": "RATP",
-    "co2e": 98,
-    "active": true,
-    "default": true,
-    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf"
-  },
-  {
-    "category": "transport",
-    "country": "FR",
-    "action": "moto",
-    "option": "> 250 cm3",
-    "co2e": 167,
-    "default": true,
-    "active": true,
-    "source": "https://base-empreinte.ademe.fr/documentation/base-carbone?docLink=Routier2"
-  },
-  {
-    "action": "electricity",
-    "category": "energy",
-    "option": "Éolienne (terre)",
-    "country": "FR",
-    "co2e": 14,
-    "active": true,
-    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie"
-  },
-  {
-    "action": "electricity",
-    "category": "energy",
-    "option": "Éolienne (mer)",
-    "country": "FR",
-    "co2e": 15,
-    "active": true,
-    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie"
-  },
-  {
-    "co2e": 968,
-    "action": "gas",
-    "category": "energy",
-    "option": "Gaz de haut fourneau",
-    "country": "FR",
-    "active": false
-  },
-  {
-    "action": "gas",
-    "category": "energy",
-    "option": "Gaz naturel",
-    "country": "FR",
-    "co2e": 239,
-    "default": true,
-    "active": false
-  },
-  {
-    "co2e": 171,
-    "action": "gas",
-    "category": "energy",
-    "option": "Gaz de cokerie",
-    "country": "FR",
-    "active": false
-  },
-  {
-    "co2e": 6,
-    "action": "electricity",
-    "category": "energy",
-    "option": "Nucléaire",
-    "country": "FR",
-    "default": false,
-    "active": true,
-    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie"
-  },
-  {
-    "action": "electricity",
-    "category": "energy",
-    "option": "Hydroélectrique",
-    "country": "FR",
-    "co2e": 6,
-    "active": true,
-    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie"
-  },
-  {
-    "category": "energy",
-    "country": "FR",
-    "action": "electricity",
-    "option": "Centrale charbon",
-    "co2e": 1060,
-    "active": true,
-    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie"
-  },
-  {
-    "country": "FR",
-    "active": true,
     "co2e": 34.5,
     "grammesPerPortion": 50,
     "hint": "Une portion de pain de 50g, correspondant à un petit pain que l'on trouve dans les cafétérias.",
-    "action": "bread",
-    "category": "food",
-    "co2PerGrammes": 0.69,
+    "active": true,
+    "action": "Pain",
     "source": "https://agribalyse.ademe.fr/app/aliments/7261#Pain_de_campagne_maison_(avec_farine_pour_machine_%C3%A0_pain)",
+    "category": "Repas",
+    "co2PerGrammes": 0.69,
     "option": "Pain de campagne"
   },
   {
     "country": "FR",
-    "category": "energy",
-    "action": "water",
+    "co2e": 64.3,
     "default": true,
-    "co2e": 132,
-    "option": "Production d’eau potable en France",
-    "active": true
-  },
-  {
-    "country": "FR",
-    "category": "energy",
-    "action": "electricity",
-    "option": "Géothermique",
-    "default": false,
-    "co2e": 45,
+    "unit": "kms",
+    "comments": "Navette fluviale/Donnée 2009, ADEME",
     "active": true,
-    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie"
+    "action": "Bateau",
+    "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees",
+    "category": "Trajets",
+    "option": "Navette fluviale"
   },
   {
-    "category": "transport",
+    "co2e": 170,
     "country": "FR",
-    "option": "Eurostar",
-    "action": "train",
-    "co2e": 7.48,
+    "action": "Boissons",
     "active": true,
-    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf"
+    "category": "Repas",
+    "option": "Soda"
   },
   {
     "country": "FR",
-    "category": "food",
-    "option": "Café filtre",
+    "co2e": 271000,
+    "default": true,
+    "action": "Lave-vaiselle",
+    "category": "Electroménager",
+    "option": "12 couverts"
+  },
+  {
+    "country": "FR",
+    "co2e": 12,
+    "action": "Opérateur mobile",
+    "active": true,
+    "category": "Numérique",
+    "option": "Orange"
+  },
+  {
+    "co2e": 58,
+    "country": "FR",
+    "action": "Dessert",
+    "active": true,
+    "category": "Repas",
+    "option": "Fruits transformés"
+  },
+  {
+    "country": "FR",
+    "co2e": 385000,
+    "action": "Lit",
+    "active": true,
+    "category": "Mobilier",
+    "option": "Matelas en mousse & Sommier en tissu"
+  },
+  {
+    "co2e": 273,
+    "country": "FR",
+    "active": true,
+    "action": "Electricité",
+    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie",
+    "category": "Logement",
+    "option": "Butane",
+    "amortization": 1,
+    "hint": "Indiquez votre consommation annuelle en kilowattheure indiquée sur votre facture annuelle d'électricité.",
+    "unit": "kWh"
+  },
+  {
+    "country": "FR",
+    "co2e": 83.2,
+    "default": true,
+    "unit": "kms",
+    "comments": "Avion passagers/Long courrier, 2018/SANS trainées, ADEME",
+    "active": true,
+    "action": "Avion",
+    "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees",
+    "category": "Trajets",
+    "option": "Long courrier"
+  },
+  {
+    "co2e": 26.93,
+    "country": "FR",
+    "default": true,
+    "unit": "kms",
+    "active": true,
+    "action": "Train",
+    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf",
+    "category": "Trajets",
+    "option": "TER"
+  },
+  {
+    "country": "FR",
+    "co2e": 7200,
+    "default": true,
+    "action": "Lecteur musique",
+    "active": true,
+    "category": "Numérique",
+    "option": "tactile"
+  },
+  {
+    "country": "FR",
+    "co2e": 179000,
+    "default": true,
+    "action": "Canapé",
+    "category": "Mobilier",
+    "option": "Textile"
+  },
+  {
+    "country": "FR",
+    "co2e": 87600,
+    "action": "Frigidaire",
+    "category": "Electroménager",
+    "option": "Mini-bar"
+  },
+  {
+    "country": "FR",
+    "co2e": 119,
+    "default": true,
+    "unit": "kms",
+    "comments": "Voiture moyenne/Mixte/2018",
+    "active": true,
+    "action": "Voiture",
+    "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees",
+    "category": "Trajets",
+    "option": "Thermique"
+  },
+  {
+    "country": "FR",
+    "co2e": 23.2,
+    "action": "Opérateur mobile",
+    "active": true,
+    "category": "Numérique",
+    "option": "Bouygues Telecom"
+  },
+  {
+    "country": "FR",
+    "co2e": 217000,
+    "default": true,
+    "action": "Four",
+    "category": "Electroménager",
+    "option": "Electrique encastrable"
+  },
+  {
+    "co2e": 150,
+    "country": "FR",
+    "action": "Entrée",
+    "active": true,
+    "category": "Repas",
+    "option": "Mixte"
+  },
+  {
+    "co2e": 25.41,
+    "country": "FR",
+    "action": "Fromage",
+    "active": true,
+    "category": "Repas",
+    "option": "Gouda"
+  },
+  {
+    "country": "FR",
+    "co2e": 1.04,
+    "unit": "euros",
+    "default": true,
+    "action": "Banque",
+    "active": true,
+    "category": "Services",
+    "option": "Crédit mutuel"
+  },
+  {
+    "country": "FR",
+    "co2e": 342000,
+    "default": true,
+    "action": "Lave-linge",
+    "category": "Electroménager",
+    "option": "capacité 7 kg"
+  },
+  {
+    "co2e": 51,
+    "country": "FR",
+    "action": "Fromage",
+    "active": true,
+    "category": "Repas",
+    "option": "Pecorino"
+  },
+  {
+    "country": "FR",
+    "co2e": 10790,
+    "action": "Chauffage",
+    "category": "Logement",
+    "option": "Plaquettes chaudière",
+    "amortization": 1,
+    "hint": "Un MAP est un mètre cube apparent",
+    "unit": "MAP"
+  },
+  {
+    "country": "FR",
+    "co2e": 6.16,
+    "action": "Opérateur mobile",
+    "active": true,
+    "category": "Numérique",
+    "option": "SFR"
+  },
+  {
+    "country": "FR",
+    "co2e": 59680,
+    "action": "Chauffage",
+    "category": "Logement",
+    "option": "Bûches chaudière",
+    "amortization": 1,
+    "hint": "Indiquez votre consommation annuelle en stères de buches.",
+    "unit": "Stères"
+  },
+  {
+    "co2e": 237,
+    "country": "FR",
+    "action": "Boissons",
+    "active": true,
+    "category": "Repas",
+    "option": "Soupe"
+  },
+  {
+    "co2e": 102,
+    "country": "FR",
+    "action": "Accompagnement",
+    "active": true,
+    "category": "Repas",
+    "option": "Pommes de terre"
+  },
+  {
+    "country": "FR",
+    "co2e": 21,
+    "default": true,
+    "unit": "kms",
+    "active": false,
+    "action": "Vélo",
+    "source": "European Cyclists’ Federation (ECF), “Quantifying CO2 savings of Cycling.” 2011.",
+    "category": "Trajets",
+    "option": "Musculaire"
+  },
+  {
+    "country": "FR",
+    "co2e": 34400,
+    "action": "Chaise",
+    "category": "Mobilier",
+    "option": "Plastique "
+  },
+  {
     "co2e": 120,
-    "action": "coffee",
-    "active": false
+    "country": "FR",
+    "action": "Accompagnement",
+    "active": true,
+    "category": "Repas",
+    "option": "Riz"
+  },
+  {
+    "co2e": 55,
+    "country": "FR",
+    "action": "Accompagnement",
+    "active": true,
+    "category": "Repas",
+    "option": "Légumes"
+  },
+  {
+    "country": "FR",
+    "co2e": 415000,
+    "default": false,
+    "action": "Frigidaire",
+    "category": "Electroménager",
+    "option": "Congélateur armoire 205 L"
+  },
+  {
+    "co2e": 10.2,
+    "country": "FR",
+    "action": "Fromage",
+    "active": true,
+    "category": "Repas",
+    "option": "Cottage cheese"
+  },
+  {
+    "country": "FR",
+    "co2e": 133000,
+    "default": true,
+    "action": "Home cinéma",
+    "active": true,
+    "category": "Numérique",
+    "option": "5.1"
+  },
+  {
+    "country": "FR",
+    "co2e": 24000,
+    "default": true,
+    "action": "Pantalon",
+    "active": true,
+    "source": "https://impactco2.fr/habillement/jeans",
+    "category": "Habits",
+    "option": "Jean"
+  },
+  {
+    "country": "FR",
+    "co2e": 80200,
+    "action": "Table",
+    "category": "Mobilier",
+    "option": "Bois massif"
+  },
+  {
+    "country": "FR",
+    "co2e": 326300,
+    "default": true,
+    "action": "Lit",
+    "active": true,
+    "category": "Mobilier",
+    "option": "Matelas en mousse & Sommier à lattes"
+  },
+  {
+    "co2e": 140,
+    "country": "FR",
+    "action": "Dessert",
+    "active": true,
+    "category": "Repas",
+    "option": "Glace"
+  },
+  {
+    "country": "FR",
+    "co2e": 12.4,
+    "unit": "kms",
+    "comments": "Voiture particulière/Coeur de gamme - Véhicule compact/Electrique",
+    "active": true,
+    "action": "Voiture",
+    "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees",
+    "category": "Trajets",
+    "option": "Électrique"
+  },
+  {
+    "co2e": 20.76,
+    "country": "FR",
+    "action": "Fromage",
+    "active": true,
+    "category": "Repas",
+    "option": "Cream cheese"
+  },
+  {
+    "country": "FR",
+    "co2e": 40000,
+    "unit": "heure",
+    "comments": "gco2e / heure d'utilisation",
+    "active": true,
+    "action": "Bateau",
+    "category": "Trajets",
+    "option": "Hors-bord"
+  },
+  {
+    "country": "FR",
+    "co2e": 44,
+    "active": true,
+    "action": "Electricité",
+    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie",
+    "category": "Logement",
+    "option": "Photovoltaïque ",
+    "amortization": 1,
+    "hint": "Indiquez votre consommation annuelle en kilowattheure indiquée sur votre facture annuelle d'électricité.",
+    "unit": "kWh"
+  },
+  {
+    "co2e": 475,
+    "country": "FR",
+    "action": "Boissons",
+    "active": true,
+    "category": "Repas",
+    "option": "Jus de fruit"
+  },
+  {
+    "country": "FR",
+    "co2e": 18700,
+    "action": "Chaussure",
+    "active": true,
+    "source": "https://impactco2.fr/habillement/chaussuresdesport",
+    "category": "Habits",
+    "option": "Sport"
+  },
+  {
+    "co2e": 9.72,
+    "country": "FR",
+    "action": "Fromage",
+    "active": true,
+    "category": "Repas",
+    "option": "Fromage frais"
+  },
+  {
+    "country": "FR",
+    "co2e": 98,
+    "default": true,
+    "unit": "kms",
+    "active": true,
+    "action": "Bus",
+    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf",
+    "category": "Trajets",
+    "option": "RATP"
+  },
+  {
+    "country": "FR",
+    "co2e": 167,
+    "default": true,
+    "unit": "kms",
+    "active": true,
+    "action": "Moto",
+    "source": "https://base-empreinte.ademe.fr/documentation/base-carbone?docLink=Routier2",
+    "category": "Trajets",
+    "option": "> 250 cm3"
+  },
+  {
+    "country": "FR",
+    "co2e": 14,
+    "active": true,
+    "action": "Electricité",
+    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie",
+    "category": "Logement",
+    "option": "Éolienne (terre)",
+    "amortization": 1,
+    "hint": "Indiquez votre consommation annuelle en kilowattheure indiquée sur votre facture annuelle d'électricité.",
+    "unit": "kWh"
+  },
+  {
+    "country": "FR",
+    "co2e": 15,
+    "active": true,
+    "action": "Electricité",
+    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie",
+    "category": "Logement",
+    "option": "Éolienne (mer)",
+    "amortization": 1,
+    "hint": "Indiquez votre consommation annuelle en kilowattheure indiquée sur votre facture annuelle d'électricité.",
+    "unit": "kWh"
+  },
+  {
+    "country": "FR",
+    "co2e": 965,
+    "active": false,
+    "action": "Gaz",
+    "category": "Logement",
+    "option": "Gaz de haut fourneau",
+    "amortization": 1,
+    "hint": "Indiquez votre consommation annuelle en kilowattheure indiquée sur votre facture annuelle de gaz.",
+    "unit": "kWh"
+  },
+  {
+    "country": "FR",
+    "co2e": 216,
+    "default": true,
+    "active": false,
+    "action": "Gaz",
+    "category": "Logement",
+    "option": "Gaz naturel",
+    "amortization": 1,
+    "hint": "Indiquez votre consommation annuelle en kilowattheure indiquée sur votre facture annuelle de gaz.",
+    "unit": "kWh"
+  },
+  {
+    "co2e": 171,
+    "country": "FR",
+    "active": false,
+    "action": "Gaz",
+    "category": "Logement",
+    "option": "Gaz de cokerie",
+    "amortization": 1,
+    "hint": "Indiquez votre consommation annuelle en kilowattheure indiquée sur votre facture annuelle de gaz.",
+    "unit": "kWh"
+  },
+  {
+    "co2e": 6,
+    "country": "FR",
+    "default": false,
+    "active": true,
+    "action": "Electricité",
+    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie",
+    "category": "Logement",
+    "option": "Nucléaire",
+    "amortization": 1,
+    "hint": "Indiquez votre consommation annuelle en kilowattheure indiquée sur votre facture annuelle d'électricité.",
+    "unit": "kWh"
+  },
+  {
+    "country": "FR",
+    "co2e": 6,
+    "active": true,
+    "action": "Electricité",
+    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie",
+    "category": "Logement",
+    "option": "Hydroélectrique",
+    "amortization": 1,
+    "hint": "Indiquez votre consommation annuelle en kilowattheure indiquée sur votre facture annuelle d'électricité.",
+    "unit": "kWh"
+  },
+  {
+    "country": "FR",
+    "co2e": 1060,
+    "active": true,
+    "action": "Electricité",
+    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie",
+    "category": "Logement",
+    "option": "Centrale charbon",
+    "amortization": 1,
+    "hint": "Indiquez votre consommation annuelle en kilowattheure indiquée sur votre facture annuelle d'électricité.",
+    "unit": "kWh"
+  },
+  {
+    "country": "FR",
+    "co2e": 132,
+    "default": true,
+    "active": true,
+    "action": "Eau",
+    "category": "Logement",
+    "option": "Réseau d’eau potable",
+    "amortization": 1,
+    "unit": "m3",
+    "hint": "Indiquez votre consommation annuelle en mètres cuve indiquée sur votre facture annuelle d'eau."
+  },
+  {
+    "country": "FR",
+    "co2e": 45,
+    "default": false,
+    "active": true,
+    "action": "Electricité",
+    "source": "https://climate.selectra.com/fr/empreinte-carbone/energie",
+    "category": "Logement",
+    "option": "Géothermique",
+    "amortization": 1,
+    "hint": "Indiquez votre consommation annuelle en kilowattheure indiquée sur votre facture annuelle d'électricité.",
+    "unit": "kWh"
+  },
+  {
+    "country": "FR",
+    "co2e": 7.48,
+    "unit": "kms",
+    "active": true,
+    "action": "Train",
+    "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf",
+    "category": "Trajets",
+    "option": "Eurostar"
+  },
+  {
+    "country": "FR",
+    "co2e": 120,
+    "action": "Café",
+    "active": true,
+    "category": "Repas",
+    "option": "Café filtre"
   }
 ]

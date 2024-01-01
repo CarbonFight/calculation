@@ -53,7 +53,7 @@ router.get('/', async (req, res) => {
       let result;
       const counter = !count || count === "null" || count === undefined ? 1 : count;
       if (category !== "food") {
-        result = await calculation(category, action, option, counter, side); 
+        result = await calculation(category, action, option); 
       } else {
         result = await calculationFood(category, action, option, counter, side); 
       }
@@ -64,7 +64,8 @@ router.get('/', async (req, res) => {
           option: result[1],
           co2e: result[0],
           hint: result[2] || "",
-          count: parseInt(counter, 10)
+          amortization : result[3] || "",
+          unit : result[4] || ""
       };
 
       if (category === "food" && action === "main" && side) {
