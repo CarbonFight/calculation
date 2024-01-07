@@ -64,7 +64,7 @@ router.get('/', async (req, res) => {
           option: result[1],
           co2e: result[0],
           hint: result[2] || "",
-          amortization : result[3] || "",
+          amortization : result[3] || 0,
           unit : result[4] || ""
       };
 

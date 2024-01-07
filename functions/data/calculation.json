@@ -1,14 +1,16 @@
 [
   {
     "country": "FR",
-    "co2e": 24.9,
     "default": true,
     "unit": "kms",
     "active": true,
     "action": "Trottinette",
     "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees",
     "category": "Trajets",
-    "option": "Électrique"
+    "option": "Électrique",
+    "amortization": 0,
+    "hint": "Indiquez la distance parcourue.",
+    "co2e": 25
   },
   {
     "co2e": 679,
@@ -36,7 +38,9 @@
     "action": "Télévision",
     "active": true,
     "category": "Numérique",
-    "option": "49 pouces"
+    "option": "49 pouces",
+    "amortization": 10,
+    "hint": "Indiquez le nombre de télévisions 30-40 pouces en votre possession. Il s'agit de télévision dont la diagonale est supérieur à 1 mètre 25 (écran de grande taille)."
   },
   {
     "country": "FR",
@@ -44,18 +48,21 @@
     "default": true,
     "action": "Opérateur mobile",
     "active": true,
-    "category": "Numérique",
-    "option": "Free"
+    "option": "Free",
+    "amortization": 0,
+    "category": "Services"
   },
   {
-    "co2e": 7.48,
     "country": "FR",
     "unit": "kms",
     "active": true,
     "action": "Train",
     "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf",
     "category": "Trajets",
-    "option": "Eurostar"
+    "option": "Eurostar",
+    "amortization": 0,
+    "hint": "Indiquez la distance parcourue.",
+    "co2e": 7
   },
   {
     "co2e": 512,
@@ -73,7 +80,9 @@
     "active": true,
     "source": "https://impactco2.fr/habillement/vesteimpermeable",
     "category": "Habits",
-    "option": "Veste imperméable "
+    "option": "Veste imperméable ",
+    "amortization": 3,
+    "hint": "Indiquez le nombre de vestes imperméables en votre possession."
   },
   {
     "country": "FR",
@@ -83,7 +92,9 @@
     "action": "Cigarettes",
     "active": true,
     "category": "Objets",
-    "option": "Toutes marques"
+    "option": "Toutes marques",
+    "hint": "Indiquez le nombre de paquets de cigarettes, toutes marques confondues consommés par an.",
+    "amortization": 1
   },
   {
     "country": "FR",
@@ -92,7 +103,9 @@
     "active": true,
     "source": "https://impactco2.fr/habillement/manteau",
     "category": "Habits",
-    "option": "Manteau d'hiver"
+    "option": "Manteau d'hiver",
+    "amortization": 3,
+    "hint": "Indiquez le nombre de manteaux d'hivers en votre prossession."
   },
   {
     "country": "FR",
@@ -101,18 +114,22 @@
     "active": true,
     "source": "https://impactco2.fr/habillement",
     "category": "Habits",
-    "option": "Sweat en coton"
+    "option": "Sweat en coton",
+    "amortization": 2,
+    "hint": "Indiquez le nombre de pulls en coton en votre prossession."
   },
   {
     "country": "FR",
-    "co2e": 35.9,
     "unit": "heures",
     "comments": "Bateau automoteur/400 à 649 TPL, ADEME",
     "active": true,
     "action": "Bateau",
     "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees",
     "category": "Trajets",
-    "option": "Péniche"
+    "option": "Péniche",
+    "amortization": 0,
+    "hint": "Indiquez le nombre d'heures d'utilisation.",
+    "co2e": 36
   },
   {
     "country": "FR",
@@ -121,7 +138,9 @@
     "active": true,
     "source": "https://impactco2.fr/habillement",
     "category": "Habits",
-    "option": "Acrylique "
+    "option": "Acrylique ",
+    "amortization": 2,
+    "hint": "Indiquez le nombre de pulls acrylique en votre possession."
   },
   {
     "co2e": 151,
@@ -132,7 +151,6 @@
     "option": "Crême dessert"
   },
   {
-    "co2e": 7.04,
     "country": "FR",
     "default": false,
     "unit": "kms",
@@ -140,7 +158,10 @@
     "action": "Train",
     "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf",
     "category": "Trajets",
-    "option": "Transilien"
+    "option": "Transilien",
+    "amortization": 0,
+    "hint": "Indiquez la distance parcourue.",
+    "co2e": 7
   },
   {
     "country": "FR",
@@ -151,7 +172,9 @@
     "action": "Bateau",
     "source": "https://skeptics.stackexchange.com/questions/23050/do-jet-skis-produce-in-an-hour-equivalent-pollution-to-100-000km-of-a-new-small",
     "category": "Trajets",
-    "option": "Jet skis"
+    "option": "Jet skis",
+    "amortization": 0,
+    "hint": "Indiquez le nombre d'heures d'utilisation."
   },
   {
     "country": "FR",
@@ -159,7 +182,9 @@
     "action": "Tablette",
     "active": true,
     "category": "Numérique",
-    "option": "Détachable"
+    "option": "Détachable",
+    "amortization": 5,
+    "hint": "Indiquez le nombre de tablette détachable en votre possession. Une tablette détachable dispose d'un socle comprenant généralement un clavier."
   },
   {
     "country": "FR",
@@ -169,7 +194,8 @@
     "option": "Bûches Poêle à bois",
     "amortization": 1,
     "hint": "Indiquez votre consommation annuelle en stères de buches.",
-    "unit": "Stères"
+    "unit": "Stères",
+    "active": true
   },
   {
     "country": "FR",
@@ -177,7 +203,9 @@
     "action": "Lecteur musique",
     "active": true,
     "category": "Numérique",
-    "option": "non tactile"
+    "option": "non tactile",
+    "amortization": 10,
+    "hint": "Indiquez le nombre de lecteurs de musique non tactile en votre possession."
   },
   {
     "country": "FR",
@@ -185,7 +213,9 @@
     "action": "Ordinateur",
     "active": true,
     "category": "Numérique",
-    "option": "Fixe haute performance"
+    "option": "Fixe haute performance",
+    "amortization": 5,
+    "hint": "Indiquez le nombre d'ordinateurs fixe haute performance en votre possession, disposant d'une carte graphique et CPU puissant."
   },
   {
     "co2e": 100,
@@ -212,14 +242,16 @@
   },
   {
     "country": "FR",
-    "co2e": 61.9,
     "unit": "kms",
     "comments": "Voiture particulière/Coeur de gamme - Véhicule compact/Hybride, full, Prius",
     "active": true,
     "action": "Voiture",
     "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees",
     "category": "Trajets",
-    "option": "Hybride"
+    "option": "Hybride",
+    "amortization": 0,
+    "hint": "Indiquez la distance parcourue.",
+    "co2e": 62
   },
   {
     "country": "FR",
@@ -229,7 +261,9 @@
     "active": true,
     "action": "Bateau",
     "category": "Trajets",
-    "option": "Voilier à moteur"
+    "option": "Voilier à moteur",
+    "amortization": 0,
+    "hint": "Indiquez le nombre d'heures d'utilisation."
   },
   {
     "country": "FR",
@@ -239,7 +273,9 @@
     "action": "Train",
     "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf",
     "category": "Trajets",
-    "option": "THALYS"
+    "option": "THALYS",
+    "amortization": 0,
+    "hint": "Indiquez la distance parcourue."
   },
   {
     "country": "FR",
@@ -249,7 +285,9 @@
     "active": true,
     "source": "https://impactco2.fr/habillement",
     "category": "Habits",
-    "option": "Coton"
+    "option": "Coton",
+    "amortization": 2,
+    "hint": "Indiquez le nombre de chemises en coton en votre possession."
   },
   {
     "country": "FR",
@@ -285,7 +323,9 @@
     "active": true,
     "source": "https://impactco2.fr/habillement/chaussuresencuir",
     "category": "Habits",
-    "option": "Cuir"
+    "option": "Cuir",
+    "amortization": 2,
+    "hint": "Indiquez le nombre de chaussures en cuir en votre possession."
   },
   {
     "co2e": 730,
@@ -304,14 +344,18 @@
     "co2e": 301000,
     "action": "Frigidaire",
     "category": "Electroménager",
-    "option": "Congélateur coffre 261 L"
+    "option": "Congélateur coffre 261 L",
+    "amortization": 10,
+    "hint": "Indiquez le nombre de congélateurs (de type coffre), d'une capacité d'environ 261 L en votre possession."
   },
   {
     "country": "FR",
     "co2e": 24800,
     "action": "Chaise",
     "category": "Mobilier",
-    "option": "Bois & Textile "
+    "option": "Bois & Textile ",
+    "amortization": 10,
+    "hint": "Indiquez le nombre de chaises en bois et textile dans votre logement."
   },
   {
     "co2e": 75,
@@ -329,17 +373,21 @@
     "action": "T-shirt",
     "active": true,
     "category": "Habits",
-    "option": "Coton"
+    "option": "Coton",
+    "amortization": 2,
+    "hint": "Indiquez le nombre de T-shirts en coton en votre prossession."
   },
   {
     "country": "FR",
-    "co2e": 3.4,
     "unit": "kms",
     "active": true,
     "action": "Train",
     "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf",
     "category": "Trajets",
-    "option": "Tramway"
+    "option": "Tramway",
+    "amortization": 0,
+    "hint": "Indiquez la distance parcourue.",
+    "co2e": 3
   },
   {
     "country": "FR",
@@ -356,7 +404,10 @@
     "action": "Immobilier",
     "category": "Logement",
     "option": "Maison ",
-    "amortization": 50
+    "amortization": 50,
+    "unit": "m2",
+    "hint": "Indiquez la surface du logement construit.",
+    "active": true
   },
   {
     "country": "FR",
@@ -364,7 +415,9 @@
     "default": true,
     "action": "Table",
     "category": "Mobilier",
-    "option": "Bois"
+    "option": "Bois",
+    "amortization": 10,
+    "hint": "Indiquez le nombre de tables en bois dans votre logement."
   },
   {
     "co2e": 300,
@@ -380,18 +433,22 @@
     "action": "Mobile",
     "active": true,
     "category": "Numérique",
-    "option": "classique"
+    "option": "classique",
+    "amortization": 5,
+    "hint": "Indiquez le nombre de mobile classique en votre possession, en dehors des smartphones avec écran tactiles."
   },
   {
     "country": "FR",
-    "co2e": 2.166,
     "default": true,
     "unit": "arrêts",
     "comments": "Distance is not KM but number of stations // ~0.57 Km between 2 stations (Paris) // 2.5 gCo2e / km (Paris)",
     "active": true,
     "action": "Métro",
     "category": "Trajets",
-    "option": "Paris"
+    "option": "Paris",
+    "hint": "Indiquez le nombre d'arrêts.",
+    "co2e": 2,
+    "amortization": 0
   },
   {
     "co2e": 115,
@@ -428,7 +485,10 @@
     "action": "Immobilier",
     "category": "Logement",
     "option": "Logement écoconçu",
-    "amortization": 50
+    "amortization": 50,
+    "unit": "m2",
+    "hint": "Indiquez la surface du logement construit.",
+    "active": true
   },
   {
     "co2e": 2395,
@@ -440,28 +500,25 @@
   },
   {
     "country": "FR",
-    "co2e": 115000,
-    "action": "Lit",
-    "active": true,
-    "category": "Mobilier",
-    "option": "cadre de lit"
-  },
-  {
-    "country": "FR",
     "co2e": 5900000,
     "action": "Voiture",
     "category": "Objets",
-    "option": "Hydrogène"
+    "option": "Hydrogène",
+    "active": true,
+    "hint": "Indiquez le nombre de voitures à hydrogène en votre prossession.",
+    "amortization": 20
   },
   {
-    "co2e": 2.99,
     "country": "FR",
     "unit": "kms",
     "active": true,
     "action": "Train",
     "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf",
     "category": "Trajets",
-    "option": "TGV INOUI"
+    "option": "TGV INOUI",
+    "amortization": 0,
+    "hint": "Indiquez la distance parcourue.",
+    "co2e": 3
   },
   {
     "co2e": 16.8,
@@ -477,7 +534,9 @@
     "co2e": 305000,
     "action": "Lave-linge",
     "category": "Electroménager",
-    "option": "capacité 5 kg"
+    "option": "capacité 5 kg",
+    "amortization": 10,
+    "hint": "Indiquez le nombre de lave-linge d'une capacité d'environ 5L en votre possession."
   },
   {
     "country": "FR",
@@ -485,7 +544,9 @@
     "action": "Tablette",
     "active": true,
     "category": "Numérique",
-    "option": "Mini "
+    "option": "Mini ",
+    "amortization": 5,
+    "hint": "Indiquez le nombre de tablette en votre possession, de taille inférieur à 9 pouces, soit une diagonale inférieur à 23 cm."
   },
   {
     "country": "FR",
@@ -493,7 +554,9 @@
     "action": "Ordinateur",
     "active": true,
     "category": "Numérique",
-    "option": "Fixe bureautique"
+    "option": "Fixe bureautique",
+    "amortization": 5,
+    "hint": "Indiquez le nombre d'ordinateurs fixe de type destiné à la bureautique en votre possession."
   },
   {
     "co2e": 120,
@@ -511,17 +574,21 @@
     "action": "Autocar",
     "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf",
     "category": "Trajets",
-    "option": "Agglomération"
+    "option": "Agglomération",
+    "amortization": 0,
+    "hint": "Indiquez la distance parcourue."
   },
   {
-    "co2e": 1.15,
     "country": "FR",
     "unit": "kms",
     "active": true,
     "action": "Train",
     "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf",
     "category": "Trajets",
-    "option": "OUIGO"
+    "option": "OUIGO",
+    "amortization": 0,
+    "hint": "Indiquez la distance parcourue.",
+    "co2e": 1
   },
   {
     "co2e": 22.8,
@@ -540,7 +607,9 @@
     "action": "Bateau",
     "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees",
     "category": "Trajets",
-    "option": "Ferry"
+    "option": "Ferry",
+    "amortization": 0,
+    "hint": "Indiquez le nombre d'heures d'utilisation."
   },
   {
     "country": "FR",
@@ -549,7 +618,9 @@
     "action": "Console",
     "active": true,
     "category": "Numérique",
-    "option": "Console de salon"
+    "option": "Console de salon",
+    "amortization": 5,
+    "hint": "Indiquez le nombre de consoles de salon en votre possession."
   },
   {
     "co2e": 18,
@@ -565,7 +636,9 @@
     "action": "Console",
     "active": true,
     "category": "Numérique",
-    "option": "Console portable"
+    "option": "Console portable",
+    "amortization": 5,
+    "hint": "Indiquez le nombre de consoles portables en votre possession."
   },
   {
     "co2e": 130,
@@ -601,21 +674,25 @@
   },
   {
     "country": "FR",
-    "co2e": 29.5,
     "default": true,
     "unit": "kms",
     "active": true,
     "action": "Autocar",
     "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf",
     "category": "Trajets",
-    "option": "Autoroute"
+    "option": "Autoroute",
+    "amortization": 0,
+    "hint": "Indiquez la distance parcourue.",
+    "co2e": 30
   },
   {
     "country": "FR",
     "co2e": 82700,
     "action": "Four",
     "category": "Electroménager",
-    "option": "Mini four électrique"
+    "option": "Mini four électrique",
+    "amortization": 10,
+    "hint": "Indiquez le nombre de mini-four électrique en votre possession."
   },
   {
     "country": "FR",
@@ -623,7 +700,9 @@
     "action": "Mobile",
     "active": true,
     "category": "Numérique",
-    "option": "> 5,5 pouces"
+    "option": "> 5,5 pouces",
+    "amortization": 5,
+    "hint": "Indiquez le nombre de mobile en votre possession, dont la taille est supérieur à 5,5 pouces."
   },
   {
     "country": "FR",
@@ -651,7 +730,9 @@
     "active": true,
     "action": "Sous-vêtements",
     "category": "Habits",
-    "option": "slip"
+    "option": "slip",
+    "amortization": 2,
+    "hint": "Indiquez le nombre de slips en votre prossession."
   },
   {
     "country": "FR",
@@ -659,7 +740,9 @@
     "action": "Mobile",
     "active": true,
     "category": "Numérique",
-    "option": "< 4,5 pouces"
+    "option": "< 4,5 pouces",
+    "amortization": 5,
+    "hint": "Indiquez le nombre de mobile en votre possession, dont la taille est inférieur à 4,5 pouces."
   },
   {
     "country": "FR",
@@ -668,8 +751,20 @@
     "category": "Logement",
     "option": "Plaquettes Poêle à bois",
     "amortization": 1,
-    "hint": "Un MAP est un mètre cube apparent",
-    "unit": "MAP"
+    "unit": "MAP",
+    "hint": "Un MAP est un mètre cube apparent. Indiquez votre consommation annuelle.",
+    "active": true
+  },
+  {
+    "category": "Objets",
+    "country": "FR",
+    "option": "Électrique",
+    "co2e": 91900,
+    "amortization": 5,
+    "default": true,
+    "active": true,
+    "action": "Trottinette",
+    "hint": "Indiquez le nombre de trottinettes électriques en votre prossession."
   },
   {
     "country": "FR",
@@ -678,7 +773,9 @@
     "action": "Ordinateur",
     "active": true,
     "category": "Numérique",
-    "option": "Portable"
+    "option": "Portable",
+    "amortization": 5,
+    "hint": "Indiquez le nombre d'ordinateurs portables en votre possession."
   },
   {
     "co2e": 120,
@@ -697,17 +794,21 @@
     "active": true,
     "source": "https://impactco2.fr/habillement/robeencoton",
     "category": "Habits",
-    "option": "Coton"
+    "option": "Coton",
+    "amortization": 2,
+    "hint": "Indiquez le nombre de robes en coton en votre prossession."
   },
   {
-    "co2e": 6.73,
     "country": "FR",
     "unit": "kms",
     "active": true,
     "action": "Train",
     "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf",
     "category": "Trajets",
-    "option": "Intercités"
+    "option": "Intercités",
+    "amortization": 0,
+    "hint": "Indiquez la distance parcourue.",
+    "co2e": 7
   },
   {
     "country": "FR",
@@ -715,14 +816,18 @@
     "action": "Télévision",
     "active": true,
     "category": "Numérique",
-    "option": "40-49 pouces"
+    "option": "40-49 pouces",
+    "amortization": 10,
+    "hint": "Indiquez le nombre de télévisions 30-40 pouces en votre possession. Il s'agit de télévision dont la diagonale varie entre 1 mètre et 1 mètre 25 (écran de taille moyenne)."
   },
   {
     "country": "FR",
     "co2e": 961000,
     "action": "Lave-vaiselle",
     "category": "Electroménager",
-    "option": "professionnel"
+    "option": "professionnel",
+    "amortization": 10,
+    "hint": "Indiquez le nombre de lave-vaiselle (de type professionnel) en votre possession."
   },
   {
     "co2e": 30.9,
@@ -741,7 +846,8 @@
     "option": "Granulés Poêle à bois",
     "amortization": 1,
     "hint": "Un sac standard de granulés pèse 15 Kgs. Indiquez votre consommation annuelle.",
-    "unit": "Sacs"
+    "unit": "Sacs",
+    "active": true
   },
   {
     "country": "FR",
@@ -751,21 +857,27 @@
     "action": "Bus",
     "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf",
     "category": "Trajets",
-    "option": "Hors RATP"
+    "option": "Hors RATP",
+    "amortization": 0,
+    "hint": "Indiquez la distance parcourue."
   },
   {
     "country": "FR",
     "co2e": 83000,
     "action": "Aspirateur",
     "category": "Electroménager",
-    "option": "Professionnel à traîneaux"
+    "option": "Professionnel à traîneaux",
+    "amortization": 10,
+    "hint": "Indiquez le nombre d'aspirateurs professionnel à traîneaux en votre possession."
   },
   {
     "country": "FR",
     "co2e": 182000,
     "action": "Canapé",
     "category": "Mobilier",
-    "option": "Cuir"
+    "option": "Cuir",
+    "amortization": 10,
+    "hint": "Indiquez le nombre de canapés en cuir dans votre logement."
   },
   {
     "country": "FR",
@@ -776,7 +888,9 @@
     "action": "Avion",
     "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees",
     "category": "Trajets",
-    "option": "Court courrier"
+    "option": "Court courrier",
+    "amortization": 0,
+    "hint": "Indiquez la distance parcourue."
   },
   {
     "country": "FR",
@@ -787,23 +901,30 @@
     "action": "Moto",
     "source": "https://base-empreinte.ademe.fr/documentation/base-carbone?docLink=Routier2",
     "category": "Trajets",
-    "option": "< 250 cm3"
+    "option": "< 250 cm3",
+    "amortization": 0,
+    "hint": "Indiquez la distance parcourue."
   },
   {
     "co2e": 335000,
     "country": "FR",
-    "default": true,
     "action": "Lit",
     "active": true,
     "category": "Mobilier",
-    "option": "Matelas à ressorts & Sommier en tissu"
+    "option": "Matelas à ressorts & Sommier en tissu",
+    "amortization": 10,
+    "hint": "Indiquez le nombre de lits dans votre logement, ayant un matelas à ressorts et un sommier en tissu.",
+    "default": false
   },
   {
     "country": "FR",
     "co2e": 5680000,
     "action": "Voiture",
     "category": "Objets",
-    "option": "Hybride"
+    "option": "Hybride",
+    "active": true,
+    "hint": "Indiquez le nombre de voitures hybrides en votre prossession.",
+    "amortization": 20
   },
   {
     "co2e": 335,
@@ -820,7 +941,9 @@
     "active": true,
     "source": "https://impactco2.fr/habillement",
     "category": "Habits",
-    "option": "Laine"
+    "option": "Laine",
+    "amortization": 2,
+    "hint": "Indiquez le nombre de pulls laine en votre prossession."
   },
   {
     "country": "FR",
@@ -829,7 +952,9 @@
     "active": true,
     "source": "https://impactco2.fr/habillement",
     "category": "Habits",
-    "option": "Viscose"
+    "option": "Viscose",
+    "amortization": 2,
+    "hint": "Indiquez le nombre de chemises en viscose en votre prossession."
   },
   {
     "country": "FR",
@@ -838,7 +963,9 @@
     "active": true,
     "source": "https://impactco2.fr/habillement/robeenviscose",
     "category": "Habits",
-    "option": "Viscose"
+    "option": "Viscose",
+    "amortization": 2,
+    "hint": "Indiquez le nombre de robes en viscose en votre prossession."
   },
   {
     "co2e": 650,
@@ -853,18 +980,22 @@
     "co2e": 197000,
     "action": "Canapé",
     "category": "Mobilier",
-    "option": "Convertible"
+    "option": "Convertible",
+    "amortization": 10,
+    "hint": "Indiquez le nombre de canapés convertibles dans votre logement."
   },
   {
     "country": "FR",
-    "co2e": 19.4,
     "unit": "kms",
     "comments": "Voiture particulière/Berline/Hydrogène électrolyse mix France décentralisée",
     "active": true,
     "action": "Voiture",
     "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees",
     "category": "Trajets",
-    "option": "Hydrogène"
+    "option": "Hydrogène",
+    "amortization": 0,
+    "hint": "Indiquez la distance parcourue.",
+    "co2e": 19
   },
   {
     "country": "FR",
@@ -872,7 +1003,9 @@
     "default": true,
     "action": "Frigidaire",
     "category": "Electroménager",
-    "option": "Réfrigérateur combiné"
+    "option": "Réfrigérateur combiné",
+    "amortization": 10,
+    "hint": "Indiquez le nombre de frigidaires combinés en votre possession. Il s'agit des frigidaires comportant un compartiment frigidaire et un second pour la congélation."
   },
   {
     "co2e": 55,
@@ -891,7 +1024,9 @@
     "active": true,
     "source": "https://impactco2.fr/habillement",
     "category": "Habits",
-    "option": "Coton recyclé "
+    "option": "Coton recyclé ",
+    "amortization": 2,
+    "hint": "Indiquez le nombre de pulls en coton recyclé en votre prossession."
   },
   {
     "co2e": 276300,
@@ -899,17 +1034,21 @@
     "action": "Lit",
     "active": true,
     "category": "Mobilier",
-    "option": "Matelas à ressorts & à lattes"
+    "option": "Matelas à ressorts & à lattes",
+    "amortization": 10,
+    "hint": "Indiquez le nombre de lits dans votre logement, ayant un matelas à ressorts et un sommier à lattes."
   },
   {
-    "co2e": 6.2,
     "country": "FR",
     "unit": "kms",
     "active": true,
     "action": "Avion",
     "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf",
     "category": "Trajets",
-    "option": "RER"
+    "option": "RER",
+    "amortization": 0,
+    "hint": "Indiquez la distance parcourue.",
+    "co2e": 6
   },
   {
     "country": "FR",
@@ -929,14 +1068,18 @@
     "action": "Avion",
     "source": "https://www.sciencesetavenir.fr/nature-environnement/climat/l-impact-ecologique-demesure-des-jets-prives_164673",
     "category": "Trajets",
-    "option": "Jet privé"
+    "option": "Jet privé",
+    "amortization": 0,
+    "hint": "Indiquez la distance parcourue."
   },
   {
     "country": "FR",
     "co2e": 865000,
     "action": "Four",
     "category": "Electroménager",
-    "option": "Professionnel"
+    "option": "Professionnel",
+    "amortization": 10,
+    "hint": "Indiquez le nombre de four (de type professionnel) en votre possession."
   },
   {
     "country": "FR",
@@ -944,7 +1087,10 @@
     "default": true,
     "action": "Voiture",
     "category": "Objets",
-    "option": "Thermique"
+    "option": "Thermique",
+    "active": true,
+    "hint": "Indiquez le nombre de voitures thermiques en votre prossession.",
+    "amortization": 20
   },
   {
     "country": "FR",
@@ -954,7 +1100,9 @@
     "action": "Scooter",
     "source": "https://youmatter.world/fr/moto-scooter-impact-ecologique/",
     "category": "Trajets",
-    "option": "Électrique"
+    "option": "Électrique",
+    "amortization": 0,
+    "hint": "Indiquez la distance parcourue."
   },
   {
     "country": "FR",
@@ -963,7 +1111,9 @@
     "active": true,
     "source": "https://impactco2.fr/habillement/robeenpolyester",
     "category": "Habits",
-    "option": "Polyester"
+    "option": "Polyester",
+    "amortization": 2,
+    "hint": "Indiquez le nombre de robes en polyester en votre prossession."
   },
   {
     "co2e": 52,
@@ -982,7 +1132,10 @@
     "co2e": 10020000,
     "action": "Voiture",
     "category": "Objets",
-    "option": "Électrique"
+    "option": "Électrique",
+    "active": true,
+    "hint": "Indiquez le nombre de voitures électriques en votre prossession.",
+    "amortization": 20
   },
   {
     "country": "FR",
@@ -991,7 +1144,9 @@
     "action": "Tablette",
     "active": true,
     "category": "Numérique",
-    "option": "Classique 9-11 pouces"
+    "option": "Classique 9-11 pouces",
+    "amortization": 5,
+    "hint": "Indiquez le nombre de tablette en votre possession. Une tablette classique fait entre 9 et 11 pouces."
   },
   {
     "co2e": 288,
@@ -1010,7 +1165,19 @@
     "action": "Avion",
     "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees",
     "category": "Trajets",
-    "option": "Moyen courrier"
+    "option": "Moyen courrier",
+    "amortization": 0,
+    "hint": "Indiquez la distance parcourue."
+  },
+  {
+    "category": "Objets",
+    "country": "FR",
+    "action": "Vélo",
+    "option": "Électrique",
+    "co2e": 262000,
+    "hint": "Indiquez le nombre de vélos électriques en votre prossession.",
+    "active": true,
+    "amortization": 10
   },
   {
     "country": "FR",
@@ -1020,14 +1187,18 @@
     "active": true,
     "source": "https://impactco2.fr/habillement/chaussuresentissu",
     "category": "Habits",
-    "option": "Tissu"
+    "option": "Tissu",
+    "amortization": 2,
+    "hint": "Indiquez le nombre de chaussures en tissu en votre prossession."
   },
   {
     "country": "FR",
     "co2e": 235000,
     "action": "Lave-vaiselle",
     "category": "Electroménager",
-    "option": "9 couverts"
+    "option": "9 couverts",
+    "amortization": 10,
+    "hint": "Indiquez le nombre de lave-vaiselle 9 couverts en votre possession."
   },
   {
     "country": "FR",
@@ -1036,15 +1207,9 @@
     "action": "Mobile",
     "active": true,
     "category": "Numérique",
-    "option": "5 pouces"
-  },
-  {
-    "country": "FR",
-    "co2e": 2800,
-    "action": "Télévision",
-    "active": true,
-    "category": "Numérique",
-    "option": "Télécommande"
+    "option": "5 pouces",
+    "amortization": 5,
+    "hint": "Indiquez le nombre de mobile en votre possession, dont la taille est d'environ 5 pouces."
   },
   {
     "co2e": 45.62,
@@ -1068,7 +1233,9 @@
     "default": true,
     "action": "Armoire",
     "category": "Mobilier",
-    "option": "Armoire en bois"
+    "option": "Armoire en bois",
+    "amortization": 10,
+    "hint": "Indiquez le nombre d'armoires en bois dans votre logement."
   },
   {
     "country": "FR",
@@ -1077,7 +1244,9 @@
     "active": true,
     "source": "https://impactco2.fr/habillement",
     "category": "Habits",
-    "option": "Polo"
+    "option": "Polo",
+    "amortization": 2,
+    "hint": "Indiquez le nombre de polos en votre prossession."
   },
   {
     "country": "FR",
@@ -1087,7 +1256,20 @@
     "action": "Vélo",
     "source": "European Cyclists’ Federation (ECF), “Quantifying CO2 savings of Cycling.” 2011.",
     "category": "Trajets",
-    "option": "Électrique"
+    "option": "Électrique",
+    "amortization": 0,
+    "hint": "Indiquez la distance parcourue."
+  },
+  {
+    "category": "Objets",
+    "country": "FR",
+    "action": "Vélo",
+    "option": "Musculaire",
+    "co2e": 100000,
+    "hint": "Indiquez le nombre de vélos musculaires en votre prossession.",
+    "active": true,
+    "default": true,
+    "amortization": 10
   },
   {
     "country": "FR",
@@ -1097,7 +1279,9 @@
     "active": true,
     "action": "Bateau",
     "category": "Trajets",
-    "option": "Yachts "
+    "option": "Yachts ",
+    "amortization": 0,
+    "hint": "Indiquez le nombre d'heures d'utilisation."
   },
   {
     "country": "FR",
@@ -1105,7 +1289,9 @@
     "active": true,
     "action": "Sous-vêtements",
     "category": "Habits",
-    "option": "lingerie féminine"
+    "option": "lingerie féminine",
+    "amortization": 2,
+    "hint": "Indiquez le nombre de lingeries féminine en votre prossession."
   },
   {
     "co2e": 100,
@@ -1121,7 +1307,9 @@
     "co2e": 52400,
     "action": "Aspirateur",
     "category": "Electroménager",
-    "option": "Domestique sans sac"
+    "option": "Domestique sans sac",
+    "amortization": 10,
+    "hint": "Indiquez le nombre d'aspirateurs sans sac en votre possession."
   },
   {
     "country": "FR",
@@ -1130,7 +1318,9 @@
     "action": "Cadre photo",
     "active": true,
     "category": "Numérique",
-    "option": "Cadre photo numérique"
+    "option": "Cadre photo numérique",
+    "amortization": 10,
+    "hint": "Indiquez le nombre de cadres photo en votre possession."
   },
   {
     "country": "FR",
@@ -1139,7 +1329,9 @@
     "active": true,
     "source": "https://impactco2.fr/habillement/vestesimilicuir",
     "category": "Habits",
-    "option": "Veste simili-cuir"
+    "option": "Veste simili-cuir",
+    "amortization": 3,
+    "hint": "Indiquez le nombre de vestes en simili-cuir en votre prossession."
   },
   {
     "country": "FR",
@@ -1148,7 +1340,10 @@
     "action": "Immobilier",
     "category": "Logement",
     "option": "Appartement",
-    "amortization": 50
+    "amortization": 50,
+    "unit": "m2",
+    "hint": "Indiquez la surface du logement construit.",
+    "active": true
   },
   {
     "country": "FR",
@@ -1156,7 +1351,9 @@
     "default": true,
     "action": "Chaise",
     "category": "Mobilier",
-    "option": "Bois "
+    "option": "Bois ",
+    "amortization": 10,
+    "hint": "Indiquez le nombre de chaises en bois dans votre logement."
   },
   {
     "country": "FR",
@@ -1165,7 +1362,9 @@
     "active": true,
     "action": "Sous-vêtements",
     "category": "Habits",
-    "option": "boxer"
+    "option": "boxer",
+    "amortization": 2,
+    "hint": "Indiquez le nombre de boxers en votre prossession."
   },
   {
     "country": "FR",
@@ -1176,7 +1375,9 @@
     "action": "Scooter",
     "source": "https://youmatter.world/fr/moto-scooter-impact-ecologique/",
     "category": "Trajets",
-    "option": "Thermique"
+    "option": "Thermique",
+    "amortization": 0,
+    "hint": "Indiquez la distance parcourue."
   },
   {
     "co2e": 23,
@@ -1194,8 +1395,8 @@
     "default": true,
     "action": "Stockage",
     "active": true,
-    "category": "Numérique",
-    "option": "Stockage cloud"
+    "option": "Stockage cloud",
+    "category": "Services"
   },
   {
     "country": "FR",
@@ -1204,8 +1405,9 @@
     "category": "Logement",
     "option": "Granulés chaudière",
     "amortization": 1,
-    "hint": "Un MAP est un mètre cube apparent. Indiquez votre consommation annuelle.",
-    "unit": "Sacs"
+    "unit": "Sacs",
+    "hint": "Un sac standard de granulés pèse 15 Kgs. Indiquez votre consommation annuelle.",
+    "active": true
   },
   {
     "country": "FR",
@@ -1213,7 +1415,9 @@
     "action": "Télévision",
     "active": true,
     "category": "Numérique",
-    "option": "30-40 pouces"
+    "option": "30-40 pouces",
+    "amortization": 10,
+    "hint": "Indiquez le nombre de télévisions 30-40 pouces en votre possession. Il s'agit de télévision dont la diagonale est inférieur à 1 mètre (petit écran)."
   },
   {
     "co2e": 88,
@@ -1233,17 +1437,21 @@
     "default": true,
     "action": "Aspirateur",
     "category": "Electroménager",
-    "option": "Domestique à sac"
+    "option": "Domestique à sac",
+    "amortization": 10,
+    "hint": "Indiquez le nombre d'aspirateurs à sac en votre possession."
   },
   {
-    "co2e": 3.23,
     "country": "FR",
     "unit": "kms",
     "active": true,
     "action": "Train",
     "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf",
     "category": "Trajets",
-    "option": "LYRIA"
+    "option": "LYRIA",
+    "amortization": 0,
+    "hint": "Indiquez la distance parcourue.",
+    "co2e": 3
   },
   {
     "country": "FR",
@@ -1251,7 +1459,9 @@
     "action": "T-shirt",
     "active": true,
     "category": "Habits",
-    "option": "Polyester"
+    "option": "Polyester",
+    "amortization": 2,
+    "hint": "Indiquez le nombre de T-shirts en polyester en votre prossession."
   },
   {
     "co2e": 0,
@@ -1283,6 +1493,17 @@
   },
   {
     "country": "FR",
+    "category": "Objets",
+    "action": "Scooter",
+    "option": "Thermique",
+    "co2e": 500000,
+    "hint": "Indiquez le nombre de scooters thermiques en votre prossession.",
+    "default": true,
+    "active": true,
+    "amortization": 10
+  },
+  {
+    "country": "FR",
     "co2e": 34.5,
     "grammesPerPortion": 50,
     "hint": "Une portion de pain de 50g, correspondant à un petit pain que l'on trouve dans les cafétérias.",
@@ -1295,7 +1516,6 @@
   },
   {
     "country": "FR",
-    "co2e": 64.3,
     "default": true,
     "unit": "kms",
     "comments": "Navette fluviale/Donnée 2009, ADEME",
@@ -1303,7 +1523,10 @@
     "action": "Bateau",
     "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees",
     "category": "Trajets",
-    "option": "Navette fluviale"
+    "option": "Navette fluviale",
+    "amortization": 0,
+    "hint": "Indiquez la distance parcourue.",
+    "co2e": 64
   },
   {
     "co2e": 170,
@@ -1319,15 +1542,17 @@
     "default": true,
     "action": "Lave-vaiselle",
     "category": "Electroménager",
-    "option": "12 couverts"
+    "option": "12 couverts",
+    "amortization": 10,
+    "hint": "Indiquez le nombre de lave-vaiselle 12 couverts en votre possession."
   },
   {
     "country": "FR",
     "co2e": 12,
     "action": "Opérateur mobile",
     "active": true,
-    "category": "Numérique",
-    "option": "Orange"
+    "option": "Orange",
+    "category": "Services"
   },
   {
     "co2e": 58,
@@ -1343,7 +1568,9 @@
     "action": "Lit",
     "active": true,
     "category": "Mobilier",
-    "option": "Matelas en mousse & Sommier en tissu"
+    "option": "Matelas en mousse & Sommier en tissu",
+    "amortization": 10,
+    "hint": "Indiquez le nombre de lits dans votre logement, ayant un matelas en mousse et un sommier en tissu."
   },
   {
     "co2e": 273,
@@ -1359,7 +1586,6 @@
   },
   {
     "country": "FR",
-    "co2e": 83.2,
     "default": true,
     "unit": "kms",
     "comments": "Avion passagers/Long courrier, 2018/SANS trainées, ADEME",
@@ -1367,10 +1593,12 @@
     "action": "Avion",
     "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees",
     "category": "Trajets",
-    "option": "Long courrier"
+    "option": "Long courrier",
+    "amortization": 0,
+    "hint": "Indiquez la distance parcourue.",
+    "co2e": 83
   },
   {
-    "co2e": 26.93,
     "country": "FR",
     "default": true,
     "unit": "kms",
@@ -1378,7 +1606,10 @@
     "action": "Train",
     "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf",
     "category": "Trajets",
-    "option": "TER"
+    "option": "TER",
+    "amortization": 0,
+    "hint": "Indiquez la distance parcourue.",
+    "co2e": 27
   },
   {
     "country": "FR",
@@ -1387,7 +1618,9 @@
     "action": "Lecteur musique",
     "active": true,
     "category": "Numérique",
-    "option": "tactile"
+    "option": "tactile",
+    "amortization": 10,
+    "hint": "Indiquez le nombre de lecteurs de musique tactile en votre possession."
   },
   {
     "country": "FR",
@@ -1395,14 +1628,18 @@
     "default": true,
     "action": "Canapé",
     "category": "Mobilier",
-    "option": "Textile"
+    "option": "Textile",
+    "amortization": 10,
+    "hint": "Indiquez le nombre de canapés en tissu dans votre logement."
   },
   {
     "country": "FR",
     "co2e": 87600,
     "action": "Frigidaire",
     "category": "Electroménager",
-    "option": "Mini-bar"
+    "option": "Mini-bar",
+    "amortization": 10,
+    "hint": "Indiquez le nombre de frigidaires de type mini-bar ou cave à vin en votre possession."
   },
   {
     "country": "FR",
@@ -1414,15 +1651,17 @@
     "action": "Voiture",
     "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees",
     "category": "Trajets",
-    "option": "Thermique"
+    "option": "Thermique",
+    "amortization": 0,
+    "hint": "Indiquez la distance parcourue."
   },
   {
     "country": "FR",
     "co2e": 23.2,
     "action": "Opérateur mobile",
     "active": true,
-    "category": "Numérique",
-    "option": "Bouygues Telecom"
+    "option": "Bouygues Telecom",
+    "category": "Services"
   },
   {
     "country": "FR",
@@ -1430,7 +1669,9 @@
     "default": true,
     "action": "Four",
     "category": "Electroménager",
-    "option": "Electrique encastrable"
+    "option": "Electrique encastrable",
+    "amortization": 10,
+    "hint": "Indiquez le nombre de four encastrable en votre possession."
   },
   {
     "co2e": 150,
@@ -1464,7 +1705,9 @@
     "default": true,
     "action": "Lave-linge",
     "category": "Electroménager",
-    "option": "capacité 7 kg"
+    "option": "capacité 7 kg",
+    "amortization": 10,
+    "hint": "Indiquez le nombre de lave-linge d'une capacité d'environ 7L en votre possession."
   },
   {
     "co2e": 51,
@@ -1481,16 +1724,17 @@
     "category": "Logement",
     "option": "Plaquettes chaudière",
     "amortization": 1,
-    "hint": "Un MAP est un mètre cube apparent",
-    "unit": "MAP"
+    "unit": "MAP",
+    "hint": "Un MAP est un mètre cube apparent. Indiquez votre consommation annuelle.",
+    "active": true
   },
   {
     "country": "FR",
     "co2e": 6.16,
     "action": "Opérateur mobile",
     "active": true,
-    "category": "Numérique",
-    "option": "SFR"
+    "option": "SFR",
+    "category": "Services"
   },
   {
     "country": "FR",
@@ -1500,7 +1744,8 @@
     "option": "Bûches chaudière",
     "amortization": 1,
     "hint": "Indiquez votre consommation annuelle en stères de buches.",
-    "unit": "Stères"
+    "unit": "Stères",
+    "active": true
   },
   {
     "co2e": 237,
@@ -1527,14 +1772,18 @@
     "action": "Vélo",
     "source": "European Cyclists’ Federation (ECF), “Quantifying CO2 savings of Cycling.” 2011.",
     "category": "Trajets",
-    "option": "Musculaire"
+    "option": "Musculaire",
+    "amortization": 0,
+    "hint": "Indiquez la distance parcourue."
   },
   {
     "country": "FR",
     "co2e": 34400,
     "action": "Chaise",
     "category": "Mobilier",
-    "option": "Plastique "
+    "option": "Plastique ",
+    "amortization": 10,
+    "hint": "Indiquez le nombre de chaises en plastique dans votre logement."
   },
   {
     "co2e": 120,
@@ -1558,7 +1807,9 @@
     "default": false,
     "action": "Frigidaire",
     "category": "Electroménager",
-    "option": "Congélateur armoire 205 L"
+    "option": "Congélateur armoire 205 L",
+    "amortization": 10,
+    "hint": "Indiquez le nombre de congélateurs (de type armoire), d'une capacité d'environ 205L en votre possession."
   },
   {
     "co2e": 10.2,
@@ -1575,7 +1826,9 @@
     "action": "Home cinéma",
     "active": true,
     "category": "Numérique",
-    "option": "5.1"
+    "option": "5.1",
+    "amortization": 15,
+    "hint": "Indiquez le nombre de Home cinéma 5.1 en votre possession"
   },
   {
     "country": "FR",
@@ -1585,14 +1838,28 @@
     "active": true,
     "source": "https://impactco2.fr/habillement/jeans",
     "category": "Habits",
-    "option": "Jean"
+    "option": "Jean",
+    "amortization": 2,
+    "hint": "Indiquez le nombre de jeans en votre prossession."
   },
   {
     "country": "FR",
     "co2e": 80200,
     "action": "Table",
     "category": "Mobilier",
-    "option": "Bois massif"
+    "option": "Bois massif",
+    "amortization": 10,
+    "hint": "Indiquez le nombre de tables en bois massif dans votre logement."
+  },
+  {
+    "country": "FR",
+    "category": "Objets",
+    "action": "Scooter",
+    "option": "Électrique",
+    "co2e": 1000000,
+    "hint": "Indiquez le nombre de scooters électriques en votre prossession.",
+    "active": true,
+    "amortization": 10
   },
   {
     "country": "FR",
@@ -1601,7 +1868,9 @@
     "action": "Lit",
     "active": true,
     "category": "Mobilier",
-    "option": "Matelas en mousse & Sommier à lattes"
+    "option": "Matelas en mousse & Sommier à lattes",
+    "amortization": 10,
+    "hint": "Indiquez le nombre de lits dans votre logement, ayant un matelas en mousse et un sommier à lattes."
   },
   {
     "co2e": 140,
@@ -1613,14 +1882,16 @@
   },
   {
     "country": "FR",
-    "co2e": 12.4,
     "unit": "kms",
     "comments": "Voiture particulière/Coeur de gamme - Véhicule compact/Electrique",
     "active": true,
     "action": "Voiture",
     "source": "https://base-empreinte.ademe.fr/donnees/jeu-donnees",
     "category": "Trajets",
-    "option": "Électrique"
+    "option": "Électrique",
+    "amortization": 0,
+    "hint": "Indiquez la distance parcourue.",
+    "co2e": 12
   },
   {
     "co2e": 20.76,
@@ -1638,7 +1909,9 @@
     "active": true,
     "action": "Bateau",
     "category": "Trajets",
-    "option": "Hors-bord"
+    "option": "Hors-bord",
+    "amortization": 0,
+    "hint": "Indiquez le nombre d'heures d'utilisation."
   },
   {
     "country": "FR",
@@ -1667,7 +1940,9 @@
     "active": true,
     "source": "https://impactco2.fr/habillement/chaussuresdesport",
     "category": "Habits",
-    "option": "Sport"
+    "option": "Sport",
+    "amortization": 2,
+    "hint": "Indiquez le nombre de chaussures de sport en votre prossession."
   },
   {
     "co2e": 9.72,
@@ -1686,7 +1961,9 @@
     "action": "Bus",
     "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf",
     "category": "Trajets",
-    "option": "RATP"
+    "option": "RATP",
+    "amortization": 0,
+    "hint": "Indiquez la distance parcourue."
   },
   {
     "country": "FR",
@@ -1697,7 +1974,9 @@
     "action": "Moto",
     "source": "https://base-empreinte.ademe.fr/documentation/base-carbone?docLink=Routier2",
     "category": "Trajets",
-    "option": "> 250 cm3"
+    "option": "> 250 cm3",
+    "amortization": 0,
+    "hint": "Indiquez la distance parcourue."
   },
   {
     "country": "FR",
@@ -1726,36 +2005,36 @@
   {
     "country": "FR",
     "co2e": 965,
-    "active": false,
     "action": "Gaz",
     "category": "Logement",
     "option": "Gaz de haut fourneau",
     "amortization": 1,
     "hint": "Indiquez votre consommation annuelle en kilowattheure indiquée sur votre facture annuelle de gaz.",
-    "unit": "kWh"
+    "unit": "kWh",
+    "active": true
   },
   {
     "country": "FR",
     "co2e": 216,
     "default": true,
-    "active": false,
     "action": "Gaz",
     "category": "Logement",
     "option": "Gaz naturel",
     "amortization": 1,
     "hint": "Indiquez votre consommation annuelle en kilowattheure indiquée sur votre facture annuelle de gaz.",
-    "unit": "kWh"
+    "unit": "kWh",
+    "active": true
   },
   {
     "co2e": 171,
     "country": "FR",
-    "active": false,
     "action": "Gaz",
     "category": "Logement",
     "option": "Gaz de cokerie",
     "amortization": 1,
     "hint": "Indiquez votre consommation annuelle en kilowattheure indiquée sur votre facture annuelle de gaz.",
-    "unit": "kWh"
+    "unit": "kWh",
+    "active": true
   },
   {
     "co2e": 6,
@@ -1804,7 +2083,7 @@
     "option": "Réseau d’eau potable",
     "amortization": 1,
     "unit": "m3",
-    "hint": "Indiquez votre consommation annuelle en mètres cuve indiquée sur votre facture annuelle d'eau."
+    "hint": "Indiquez votre consommation annuelle en mètres cube indiquée sur votre facture annuelle d'eau."
   },
   {
     "country": "FR",
@@ -1821,13 +2100,15 @@
   },
   {
     "country": "FR",
-    "co2e": 7.48,
     "unit": "kms",
     "active": true,
     "action": "Train",
     "source": "https://medias.sncf.com/sncfcom/pdf/DESTE/Methodologie-generale-InfoGES_2022.pdf",
     "category": "Trajets",
-    "option": "Eurostar"
+    "option": "Eurostar",
+    "amortization": 0,
+    "hint": "Indiquez la distance parcourue.",
+    "co2e": 7
   },
   {
     "country": "FR",
